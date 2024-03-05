@@ -1604,6 +1604,11 @@
     "types":["Fairy","Steel"],
     "icon":"images/pokemon/959 HOME.png"
   },
+  "ORTHWORM": {
+    "name":"Orthworm",
+    "types":["Steel"],
+    "icon":"images/pokemon/968 HOME.png"
+  },
   "TERAPAGOS": {
     "name":"Terapagos",
     "types":["Normal"],

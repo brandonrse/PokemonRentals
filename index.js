@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(json => pokemonJSON = json)
     .then(x => pokemonKeys = Object.keys(pokemonJSON))
-    .then(y => console.log(pokemonKeys))
     .then(function(x) {
       for(var i = 0; i < pokemonKeys.length; i++) {
         let option = pokemonKeys[i][0] + pokemonKeys[i].toLowerCase().slice(1);
@@ -66,10 +65,6 @@ fontSemiBold.load().then(function(font) {
   document.fonts.add(font);
 });
 
-function hi() {
-  console.log(typesJSON);
-  console.log(pokemonJSON["BULBASAUR"].name);
-}
 
 function loadImage(src) {
   return new Promise((resolve, reject) => {
@@ -109,7 +104,6 @@ showdownForm.addEventListener('submit', async (e) => {
   showdownFormat.forEach(pokemon => {
     pokemonObj.push(showdownParser(pokemon.split("\n")));
   });
-  console.log(pokemonObj);
 
   clearCanvas();
   await loadImage("images/Background.png")
@@ -630,7 +624,6 @@ function downloadImage() {
   }
 
   link.href = imageToDownload;
-  console.log(link);
   link.click();
 
 }
