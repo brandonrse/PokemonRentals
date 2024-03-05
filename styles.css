@@ -6,3 +6,16 @@ h1 {
   background-color: rgb(29, 29, 29);
   color: white!important;
 }
+
+.pokemon {
+  padding: 10px;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+  border: 2px solid rgb(176, 167, 154);
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+#download-btn {
+  margin-bottom: 10px;
+}

@@ -16,14 +16,14 @@
     <div class="row">
 
       <div class="col-md-2 form-check">
-        <input class="form-check-input" type="radio" name="showdownRadio" id="showdownRadio1" checked onchange="handleRadioChange(this);">
+        <input class="form-check-input" type="radio" name="showdownRadio" id="showdownRadio1" onchange="handleRadioChange(this);">
         <label class="form-check-label" for="showdownRadio1">
           Showdown format
         </label>
       </div>
 
       <div class="col-md-2 form-check">
-        <input class="form-check-input" type="radio" name="showdownRadio" id="formRadio1" onchange="handleRadioChange(this);">
+        <input class="form-check-input" type="radio" name="showdownRadio" id="formRadio1"  onchange="handleRadioChange(this);">
         <label class="form-check-label" for="formRadio1">
           Form
         </label>
@@ -65,21 +65,1295 @@
 
       <div id="pokemon-form-div" hidden>
         <form class="row pokemon-form">
-          
-          <div class="col-md-2">
-            <label for="teamName" class="form-label">Team Name</label>
-            <input type="text" class="form-control" id="teamName" required maxlength="20">
-          </div>
-          <div class="col-md-2">
-            <label for="playerName" class="form-label">Player Name</label>
-            <input type="text" class="form-control" id="playerName" required maxlength="20">
+          <div class="row">
+            <div class="col-md-3">
+              <label for="teamName" class="form-label">Team Name</label>
+              <input type="text" class="form-control" id="teamName" required maxlength="20">
+            </div>
+            <div class="col-md-3">
+              <label for="playerName" class="form-label">Player Name</label>
+              <input type="text" class="form-control" id="playerName" required maxlength="20">
+            </div>
           </div>
 
+          <div class="pokemon">
+            <div class="row">
+              <div class="col">
+                <label for="selectPokemon1" class="form-label">Pokémon #1</label>
+                <select id="selectPokemon1" name="selectPokemon1" class="form-select" aria-label="None" >
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="nickname1" class="form-label">Nickname</label>
+                <input type="text" class="form-control" id="nickname1"  maxlength="30">
+              </div>
+  
+              <div class="col">
+                <label for="level1" class="form-label">Level</label>
+                <input type="number" class="form-control" id="level1" min="0" max="100" value="100">
+              </div>
+
+              <div class="col">
+                <label for="gender1" class="form-label">Gender</label>
+                <select id="gender1" name="gender1" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="shiny1" class="form-label">Shiny</label>
+                <select id="shiny1" name="shiny1" class="form-select" aria-label="None">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+              
+              </div>
+              <div class="row">
+                
+              <div class="col">
+                <label for="ability1" class="form-label">Ability</label>
+                <input type="text" class="form-control" id="ability1"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="nature1" class="form-label">Nature</label>
+                <select id="nature1" name="nature1" class="form-select" aria-label="None">
+                  <option value="Lonely">Lonely (+Atk, -Def)</option>
+                  <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                  <option value="Naughty">Naughty (+Atk, -SpD)</option>
+                  <option value="Brave">Brave (+Atk, -Spe)</option>
+                  <option value="Bold">Bold (+Def, -Atk)</option>
+                  <option value="Impish">Impish (+Def, -SpA)</option>
+                  <option value="Lax">Lax (+Def, -SpD)</option>
+                  <option value="Relaxed">Relaxed (+Def, -Spe)</option>
+                  <option value="Modest">Modest (+SpA, -Atk)</option>
+                  <option value="Mild">Mild (+SpA, -Def)</option>
+                  <option value="Rash">Rash (+SpA, -SpD)</option>
+                  <option value="Quiet">Quiet (+SpA, -Spe)</option>
+                  <option value="Calm">Calm (+SpD, -Atk)</option>
+                  <option value="Gentle">Gentle (+SpD, -Def)</option>
+                  <option value="Careful">Careful (+SpD, -SpA)</option>
+                  <option value="Sassy">Sassy (+SpD, -Spe)</option>
+                  <option value="Timid">Timid (+Spe, -Atk)</option>
+                  <option value="Hasty">Hasty (+Spe, -Def)</option>
+                  <option value="Jolly">Timid (+Spe, -SpA)</option>
+                  <option value="Naive">Naive (+Spe, -SpD)</option>
+                  <option value="Hardy">Hardy (+Atk, -Atk)</option>
+                  <option value="Docile">Docile (+Def, -Def)</option>
+                  <option value="Bashful">Bashful (+SpA, -SpA)</option>
+                  <option value="Quirky">Quirky (+SpD, -SpD)</option>
+                  <option value="Serious">Serious (+Spe, -Spe)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="item1" class="form-label">Held Item</label>
+                <input type="text" class="form-control" id="item1"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="tera1" class="form-label">Tera Type</label>
+                <select id="tera1" name="tera1" class="form-select" aria-label="None">
+                  <option value="Normal">Normal</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Fairy">Fairy</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="hiddenPower1" class="form-label">Hidden Power</label>
+                <select id="hiddenPower1" name="hiddenPower1" class="form-select" aria-label="None">
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="move1" class="form-label">Move 1</label>
+                <input type="text" class="form-control" id="move1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move2" class="form-label">Move 2</label>
+                <input type="text" class="form-control" id="move2"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move3" class="form-label">Move 3</label>
+                <input type="text" class="form-control" id="move3"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move4" class="form-label">Move 4</label>
+                <input type="text" class="form-control" id="move4"  maxlength="30">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>EVs</h5>
+              <div class="col">
+                <label for="evHP1" class="form-label">HP</label>
+                <input type="number" class="form-control" id="evHP1" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evAtk1" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="evAtk1" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evDef1" class="form-label">Def</label>
+                <input type="number" class="form-control" id="evDef1" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpA1" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="evSpA1" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpD1" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="evSpD1" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpe1" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="evSpe1" min="0" max="255" value="0">
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>IVs</h5>
+              <div class="col">
+                <label for="ivHP1" class="form-label">HP</label>
+                <input type="number" class="form-control" id="ivHP1" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivAtk1" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="ivAtk1" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivDef1" class="form-label">Def</label>
+                <input type="number" class="form-control" id="ivDef1" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpA1" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="ivSpA1" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpD1" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="ivSpD1" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpe1" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="ivSpe1" min="0" max="31" value="31">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pokemon">
+            <div class="row">
+              <div class="col">
+                <label for="selectPokemon2" class="form-label">Pokémon #2</label>
+                <select id="selectPokemon2" name="selectPokemon2" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="nickname1" class="form-label">Nickname</label>
+                <input type="text" class="form-control" id="nickname1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="level2" class="form-label">Level</label>
+                <input type="number" class="form-control" id="level2" min="0" max="100" value="100">
+              </div>
+
+              <div class="col">
+                <label for="gender2" class="form-label">Gender</label>
+                <select id="gender2" name="gender2" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="shiny2" class="form-label">Shiny</label>
+                <select id="shiny2" name="shiny2" class="form-select" aria-label="None">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+              
+              </div>
+              <div class="row">
+                
+              <div class="col">
+                <label for="ability2" class="form-label">Ability</label>
+                <input type="text" class="form-control" id="ability2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="nature2" class="form-label">Nature</label>
+                <select id="nature2" name="nature2" class="form-select" aria-label="None">
+                  <option value="Lonely">Lonely (+Atk, -Def)</option>
+                  <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                  <option value="Naughty">Naughty (+Atk, -SpD)</option>
+                  <option value="Brave">Brave (+Atk, -Spe)</option>
+                  <option value="Bold">Bold (+Def, -Atk)</option>
+                  <option value="Impish">Impish (+Def, -SpA)</option>
+                  <option value="Lax">Lax (+Def, -SpD)</option>
+                  <option value="Relaxed">Relaxed (+Def, -Spe)</option>
+                  <option value="Modest">Modest (+SpA, -Atk)</option>
+                  <option value="Mild">Mild (+SpA, -Def)</option>
+                  <option value="Rash">Rash (+SpA, -SpD)</option>
+                  <option value="Quiet">Quiet (+SpA, -Spe)</option>
+                  <option value="Calm">Calm (+SpD, -Atk)</option>
+                  <option value="Gentle">Gentle (+SpD, -Def)</option>
+                  <option value="Careful">Careful (+SpD, -SpA)</option>
+                  <option value="Sassy">Sassy (+SpD, -Spe)</option>
+                  <option value="Timid">Timid (+Spe, -Atk)</option>
+                  <option value="Hasty">Hasty (+Spe, -Def)</option>
+                  <option value="Jolly">Timid (+Spe, -SpA)</option>
+                  <option value="Naive">Naive (+Spe, -SpD)</option>
+                  <option value="Hardy">Hardy (+Atk, -Atk)</option>
+                  <option value="Docile">Docile (+Def, -Def)</option>
+                  <option value="Bashful">Bashful (+SpA, -SpA)</option>
+                  <option value="Quirky">Quirky (+SpD, -SpD)</option>
+                  <option value="Serious">Serious (+Spe, -Spe)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="item2" class="form-label">Held Item</label>
+                <input type="text" class="form-control" id="item2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="tera2" class="form-label">Tera Type</label>
+                <select id="tera2" name="tera2" class="form-select" aria-label="None">
+                  <option value="Normal">Normal</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Fairy">Fairy</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="hiddenPower1" class="form-label">Hidden Power</label>
+                <select id="hiddenPower1" name="hiddenPower1" class="form-select" aria-label="None">
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="move1-1" class="form-label">Move 1</label>
+                <input type="text" class="form-control" id="move1-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move2-1" class="form-label">Move 2</label>
+                <input type="text" class="form-control" id="move2-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move3-1" class="form-label">Move 3</label>
+                <input type="text" class="form-control" id="move3-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move4-1" class="form-label">Move 4</label>
+                <input type="text" class="form-control" id="move4-1"  maxlength="30">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>EVs</h5>
+              <div class="col">
+                <label for="evHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="evHP2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="evAtk2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="evDef2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="evSpA2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="evSpD2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="evSpe2" min="0" max="255" value="0">
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>IVs</h5>
+              <div class="col">
+                <label for="ivHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="ivHP2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="ivAtk2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="ivDef2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="ivSpA2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="ivSpD2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="ivSpe2" min="0" max="31" value="31">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pokemon">
+            <div class="row">
+              <div class="col">
+                <label for="selectPokemon3" class="form-label">Pokémon #3</label>
+                <select id="selectPokemon3" name="selectPokemon3" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="nickname1" class="form-label">Nickname</label>
+                <input type="text" class="form-control" id="nickname1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="level2" class="form-label">Level</label>
+                <input type="number" class="form-control" id="level2" min="0" max="100" value="100">
+              </div>
+
+              <div class="col">
+                <label for="gender2" class="form-label">Gender</label>
+                <select id="gender2" name="gender2" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="shiny2" class="form-label">Shiny</label>
+                <select id="shiny2" name="shiny2" class="form-select" aria-label="None">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+              
+              </div>
+              <div class="row">
+                
+              <div class="col">
+                <label for="ability2" class="form-label">Ability</label>
+                <input type="text" class="form-control" id="ability2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="nature2" class="form-label">Nature</label>
+                <select id="nature2" name="nature2" class="form-select" aria-label="None">
+                  <option value="Lonely">Lonely (+Atk, -Def)</option>
+                  <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                  <option value="Naughty">Naughty (+Atk, -SpD)</option>
+                  <option value="Brave">Brave (+Atk, -Spe)</option>
+                  <option value="Bold">Bold (+Def, -Atk)</option>
+                  <option value="Impish">Impish (+Def, -SpA)</option>
+                  <option value="Lax">Lax (+Def, -SpD)</option>
+                  <option value="Relaxed">Relaxed (+Def, -Spe)</option>
+                  <option value="Modest">Modest (+SpA, -Atk)</option>
+                  <option value="Mild">Mild (+SpA, -Def)</option>
+                  <option value="Rash">Rash (+SpA, -SpD)</option>
+                  <option value="Quiet">Quiet (+SpA, -Spe)</option>
+                  <option value="Calm">Calm (+SpD, -Atk)</option>
+                  <option value="Gentle">Gentle (+SpD, -Def)</option>
+                  <option value="Careful">Careful (+SpD, -SpA)</option>
+                  <option value="Sassy">Sassy (+SpD, -Spe)</option>
+                  <option value="Timid">Timid (+Spe, -Atk)</option>
+                  <option value="Hasty">Hasty (+Spe, -Def)</option>
+                  <option value="Jolly">Timid (+Spe, -SpA)</option>
+                  <option value="Naive">Naive (+Spe, -SpD)</option>
+                  <option value="Hardy">Hardy (+Atk, -Atk)</option>
+                  <option value="Docile">Docile (+Def, -Def)</option>
+                  <option value="Bashful">Bashful (+SpA, -SpA)</option>
+                  <option value="Quirky">Quirky (+SpD, -SpD)</option>
+                  <option value="Serious">Serious (+Spe, -Spe)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="item2" class="form-label">Held Item</label>
+                <input type="text" class="form-control" id="item2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="tera2" class="form-label">Tera Type</label>
+                <select id="tera2" name="tera2" class="form-select" aria-label="None">
+                  <option value="Normal">Normal</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Fairy">Fairy</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="hiddenPower1" class="form-label">Hidden Power</label>
+                <select id="hiddenPower1" name="hiddenPower1" class="form-select" aria-label="None">
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="move1-1" class="form-label">Move 1</label>
+                <input type="text" class="form-control" id="move1-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move2-1" class="form-label">Move 2</label>
+                <input type="text" class="form-control" id="move2-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move3-1" class="form-label">Move 3</label>
+                <input type="text" class="form-control" id="move3-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move4-1" class="form-label">Move 4</label>
+                <input type="text" class="form-control" id="move4-1"  maxlength="30">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>EVs</h5>
+              <div class="col">
+                <label for="evHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="evHP2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="evAtk2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="evDef2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="evSpA2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="evSpD2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="evSpe2" min="0" max="255" value="0">
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>IVs</h5>
+              <div class="col">
+                <label for="ivHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="ivHP2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="ivAtk2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="ivDef2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="ivSpA2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="ivSpD2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="ivSpe2" min="0" max="31" value="31">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pokemon">
+            <div class="row">
+              <div class="col">
+                <label for="selectPokemon4" class="form-label">Pokémon #4</label>
+                <select id="selectPokemon4" name="selectPokemon4" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="nickname1" class="form-label">Nickname</label>
+                <input type="text" class="form-control" id="nickname1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="level2" class="form-label">Level</label>
+                <input type="number" class="form-control" id="level2" min="0" max="100" value="100">
+              </div>
+
+              <div class="col">
+                <label for="gender2" class="form-label">Gender</label>
+                <select id="gender2" name="gender2" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="shiny2" class="form-label">Shiny</label>
+                <select id="shiny2" name="shiny2" class="form-select" aria-label="None">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+              
+              </div>
+              <div class="row">
+                
+              <div class="col">
+                <label for="ability2" class="form-label">Ability</label>
+                <input type="text" class="form-control" id="ability2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="nature2" class="form-label">Nature</label>
+                <select id="nature2" name="nature2" class="form-select" aria-label="None">
+                  <option value="Lonely">Lonely (+Atk, -Def)</option>
+                  <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                  <option value="Naughty">Naughty (+Atk, -SpD)</option>
+                  <option value="Brave">Brave (+Atk, -Spe)</option>
+                  <option value="Bold">Bold (+Def, -Atk)</option>
+                  <option value="Impish">Impish (+Def, -SpA)</option>
+                  <option value="Lax">Lax (+Def, -SpD)</option>
+                  <option value="Relaxed">Relaxed (+Def, -Spe)</option>
+                  <option value="Modest">Modest (+SpA, -Atk)</option>
+                  <option value="Mild">Mild (+SpA, -Def)</option>
+                  <option value="Rash">Rash (+SpA, -SpD)</option>
+                  <option value="Quiet">Quiet (+SpA, -Spe)</option>
+                  <option value="Calm">Calm (+SpD, -Atk)</option>
+                  <option value="Gentle">Gentle (+SpD, -Def)</option>
+                  <option value="Careful">Careful (+SpD, -SpA)</option>
+                  <option value="Sassy">Sassy (+SpD, -Spe)</option>
+                  <option value="Timid">Timid (+Spe, -Atk)</option>
+                  <option value="Hasty">Hasty (+Spe, -Def)</option>
+                  <option value="Jolly">Timid (+Spe, -SpA)</option>
+                  <option value="Naive">Naive (+Spe, -SpD)</option>
+                  <option value="Hardy">Hardy (+Atk, -Atk)</option>
+                  <option value="Docile">Docile (+Def, -Def)</option>
+                  <option value="Bashful">Bashful (+SpA, -SpA)</option>
+                  <option value="Quirky">Quirky (+SpD, -SpD)</option>
+                  <option value="Serious">Serious (+Spe, -Spe)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="item2" class="form-label">Held Item</label>
+                <input type="text" class="form-control" id="item2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="tera2" class="form-label">Tera Type</label>
+                <select id="tera2" name="tera2" class="form-select" aria-label="None">
+                  <option value="Normal">Normal</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Fairy">Fairy</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="hiddenPower1" class="form-label">Hidden Power</label>
+                <select id="hiddenPower1" name="hiddenPower1" class="form-select" aria-label="None">
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="move1-1" class="form-label">Move 1</label>
+                <input type="text" class="form-control" id="move1-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move2-1" class="form-label">Move 2</label>
+                <input type="text" class="form-control" id="move2-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move3-1" class="form-label">Move 3</label>
+                <input type="text" class="form-control" id="move3-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move4-1" class="form-label">Move 4</label>
+                <input type="text" class="form-control" id="move4-1"  maxlength="30">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>EVs</h5>
+              <div class="col">
+                <label for="evHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="evHP2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="evAtk2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="evDef2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="evSpA2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="evSpD2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="evSpe2" min="0" max="255" value="0">
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>IVs</h5>
+              <div class="col">
+                <label for="ivHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="ivHP2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="ivAtk2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="ivDef2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="ivSpA2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="ivSpD2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="ivSpe2" min="0" max="31" value="31">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pokemon">
+            <div class="row">
+              <div class="col">
+                <label for="selectPokemon5" class="form-label">Pokémon #5</label>
+                <select id="selectPokemon5" name="selectPokemon5" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="nickname1" class="form-label">Nickname</label>
+                <input type="text" class="form-control" id="nickname1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="level2" class="form-label">Level</label>
+                <input type="number" class="form-control" id="level2" min="0" max="100" value="100">
+              </div>
+
+              <div class="col">
+                <label for="gender2" class="form-label">Gender</label>
+                <select id="gender2" name="gender2" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="shiny2" class="form-label">Shiny</label>
+                <select id="shiny2" name="shiny2" class="form-select" aria-label="None">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+              
+              </div>
+              <div class="row">
+                
+              <div class="col">
+                <label for="ability2" class="form-label">Ability</label>
+                <input type="text" class="form-control" id="ability2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="nature2" class="form-label">Nature</label>
+                <select id="nature2" name="nature2" class="form-select" aria-label="None">
+                  <option value="Lonely">Lonely (+Atk, -Def)</option>
+                  <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                  <option value="Naughty">Naughty (+Atk, -SpD)</option>
+                  <option value="Brave">Brave (+Atk, -Spe)</option>
+                  <option value="Bold">Bold (+Def, -Atk)</option>
+                  <option value="Impish">Impish (+Def, -SpA)</option>
+                  <option value="Lax">Lax (+Def, -SpD)</option>
+                  <option value="Relaxed">Relaxed (+Def, -Spe)</option>
+                  <option value="Modest">Modest (+SpA, -Atk)</option>
+                  <option value="Mild">Mild (+SpA, -Def)</option>
+                  <option value="Rash">Rash (+SpA, -SpD)</option>
+                  <option value="Quiet">Quiet (+SpA, -Spe)</option>
+                  <option value="Calm">Calm (+SpD, -Atk)</option>
+                  <option value="Gentle">Gentle (+SpD, -Def)</option>
+                  <option value="Careful">Careful (+SpD, -SpA)</option>
+                  <option value="Sassy">Sassy (+SpD, -Spe)</option>
+                  <option value="Timid">Timid (+Spe, -Atk)</option>
+                  <option value="Hasty">Hasty (+Spe, -Def)</option>
+                  <option value="Jolly">Timid (+Spe, -SpA)</option>
+                  <option value="Naive">Naive (+Spe, -SpD)</option>
+                  <option value="Hardy">Hardy (+Atk, -Atk)</option>
+                  <option value="Docile">Docile (+Def, -Def)</option>
+                  <option value="Bashful">Bashful (+SpA, -SpA)</option>
+                  <option value="Quirky">Quirky (+SpD, -SpD)</option>
+                  <option value="Serious">Serious (+Spe, -Spe)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="item2" class="form-label">Held Item</label>
+                <input type="text" class="form-control" id="item2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="tera2" class="form-label">Tera Type</label>
+                <select id="tera2" name="tera2" class="form-select" aria-label="None">
+                  <option value="Normal">Normal</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Fairy">Fairy</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="hiddenPower1" class="form-label">Hidden Power</label>
+                <select id="hiddenPower1" name="hiddenPower1" class="form-select" aria-label="None">
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="move1-1" class="form-label">Move 1</label>
+                <input type="text" class="form-control" id="move1-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move2-1" class="form-label">Move 2</label>
+                <input type="text" class="form-control" id="move2-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move3-1" class="form-label">Move 3</label>
+                <input type="text" class="form-control" id="move3-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move4-1" class="form-label">Move 4</label>
+                <input type="text" class="form-control" id="move4-1"  maxlength="30">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>EVs</h5>
+              <div class="col">
+                <label for="evHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="evHP2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="evAtk2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="evDef2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="evSpA2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="evSpD2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="evSpe2" min="0" max="255" value="0">
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>IVs</h5>
+              <div class="col">
+                <label for="ivHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="ivHP2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="ivAtk2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="ivDef2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="ivSpA2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="ivSpD2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="ivSpe2" min="0" max="31" value="31">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pokemon">
+            <div class="row">
+              <div class="col">
+                <label for="selectPokemon6" class="form-label">Pokémon #6</label>
+                <select id="selectPokemon6" name="selectPokemon6" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="nickname1" class="form-label">Nickname</label>
+                <input type="text" class="form-control" id="nickname1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="level2" class="form-label">Level</label>
+                <input type="number" class="form-control" id="level2" min="0" max="100" value="100">
+              </div>
+
+              <div class="col">
+                <label for="gender2" class="form-label">Gender</label>
+                <select id="gender2" name="gender2" class="form-select" aria-label="None">
+                  <option value="None">None</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="shiny2" class="form-label">Shiny</label>
+                <select id="shiny2" name="shiny2" class="form-select" aria-label="None">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+              
+              </div>
+              <div class="row">
+                
+              <div class="col">
+                <label for="ability2" class="form-label">Ability</label>
+                <input type="text" class="form-control" id="ability2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="nature2" class="form-label">Nature</label>
+                <select id="nature2" name="nature2" class="form-select" aria-label="None">
+                  <option value="Lonely">Lonely (+Atk, -Def)</option>
+                  <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                  <option value="Naughty">Naughty (+Atk, -SpD)</option>
+                  <option value="Brave">Brave (+Atk, -Spe)</option>
+                  <option value="Bold">Bold (+Def, -Atk)</option>
+                  <option value="Impish">Impish (+Def, -SpA)</option>
+                  <option value="Lax">Lax (+Def, -SpD)</option>
+                  <option value="Relaxed">Relaxed (+Def, -Spe)</option>
+                  <option value="Modest">Modest (+SpA, -Atk)</option>
+                  <option value="Mild">Mild (+SpA, -Def)</option>
+                  <option value="Rash">Rash (+SpA, -SpD)</option>
+                  <option value="Quiet">Quiet (+SpA, -Spe)</option>
+                  <option value="Calm">Calm (+SpD, -Atk)</option>
+                  <option value="Gentle">Gentle (+SpD, -Def)</option>
+                  <option value="Careful">Careful (+SpD, -SpA)</option>
+                  <option value="Sassy">Sassy (+SpD, -Spe)</option>
+                  <option value="Timid">Timid (+Spe, -Atk)</option>
+                  <option value="Hasty">Hasty (+Spe, -Def)</option>
+                  <option value="Jolly">Timid (+Spe, -SpA)</option>
+                  <option value="Naive">Naive (+Spe, -SpD)</option>
+                  <option value="Hardy">Hardy (+Atk, -Atk)</option>
+                  <option value="Docile">Docile (+Def, -Def)</option>
+                  <option value="Bashful">Bashful (+SpA, -SpA)</option>
+                  <option value="Quirky">Quirky (+SpD, -SpD)</option>
+                  <option value="Serious">Serious (+Spe, -Spe)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="item2" class="form-label">Held Item</label>
+                <input type="text" class="form-control" id="item2"  maxlength="30">
+              </div>
+
+              <div class="col">
+                <label for="tera2" class="form-label">Tera Type</label>
+                <select id="tera2" name="tera2" class="form-select" aria-label="None">
+                  <option value="Normal">Normal</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Fairy">Fairy</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="hiddenPower1" class="form-label">Hidden Power</label>
+                <select id="hiddenPower1" name="hiddenPower1" class="form-select" aria-label="None">
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Grass">Grass</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Flying">Flying</option>
+                  <option value="Poison">Poison</option>
+                  <option value="Ground">Ground</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Bug">Bug</option>
+                  <option value="Dragon">Dragon</option>
+                  <option value="Ghost">Ghost</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Steel">Steel</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="move1-1" class="form-label">Move 1</label>
+                <input type="text" class="form-control" id="move1-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move2-1" class="form-label">Move 2</label>
+                <input type="text" class="form-control" id="move2-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move3-1" class="form-label">Move 3</label>
+                <input type="text" class="form-control" id="move3-1"  maxlength="30">
+              </div>
+              <div class="col">
+                <label for="move4-1" class="form-label">Move 4</label>
+                <input type="text" class="form-control" id="move4-1"  maxlength="30">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>EVs</h5>
+              <div class="col">
+                <label for="evHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="evHP2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="evAtk2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="evDef2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="evSpA2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="evSpD2" min="0" max="255" value="0">
+              </div>
+
+              <div class="col">
+                <label for="evSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="evSpe2" min="0" max="255" value="0">
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              
+              <h5>IVs</h5>
+              <div class="col">
+                <label for="ivHP2" class="form-label">HP</label>
+                <input type="number" class="form-control" id="ivHP2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivAtk2" class="form-label">Atk</label>
+                <input type="number" class="form-control" id="ivAtk2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivDef2" class="form-label">Def</label>
+                <input type="number" class="form-control" id="ivDef2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpA2" class="form-label">SpA</label>
+                <input type="number" class="form-control" id="ivSpA2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpD2" class="form-label">SpD</label>
+                <input type="number" class="form-control" id="ivSpD2" min="0" max="31" value="31">
+              </div>
+
+              <div class="col">
+                <label for="ivSpe2" class="form-label">Spe</label>
+                <input type="number" class="form-control" id="ivSpe2" min="0" max="31" value="31">
+              </div>
+
+            </div>
+
+          </div>
+            <div>
+              <button type="submit" class="btn btn-primary mb-3">Generate</button>
+              <button class="btn btn-danger mb-3" onclick="resetForm()">Reset</button>
+            </div>
+          </div>
         </form>
       </div>
+    <button id="download-btn" class="btn btn-success" onclick="downloadImage()">Download</button>
     </div>
   </div>
-
   <canvas id="team-canvas" width="1920" height="1080"></canvas>
 
   <script src="index.js"></script>

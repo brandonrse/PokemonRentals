@@ -238,5 +238,135 @@
     "name":"Nidoran♀",
     "types":["Poison"],
     "icon":"images/pokemon/29 HOME.png"
+  },
+  "NIDORINA": {
+    "name":"Nidorina",
+    "types":["Poison"],
+    "icon":"images/pokemon/30 HOME.png"
+  },
+  "NIDOQUEEN": {
+    "name":"Nidoqueen",
+    "types":["Poison", "Ground"],
+    "icon":"images/pokemon/31 HOME.png"
+  },
+  "NIDORAN-M": {
+    "name":"Nidoran♂",
+    "types":["Poison"],
+    "icon":"images/pokemon/32 HOME.png"
+  },
+  "NIDORINO": {
+    "name":"Nidorino",
+    "types":["Poison"],
+    "icon":"images/pokemon/33 HOME.png"
+  },
+  "NIDOKING": {
+    "name":"Nidoking",
+    "types":["Poison","Ground"],
+    "icon":"images/pokemon/34 HOME.png"
+  },
+  "CLEFAIRY": {
+    "name":"Clefairy",
+    "types":["Fairy"],
+    "icon":"images/pokemon/35 HOME.png"
+  },
+  "CLEFABLE": {
+    "name":"Clefable",
+    "types":["Fairy"],
+    "icon":"images/pokemon/36 HOME.png"
+  },
+  "VULPIX": {
+    "name":"Vulpix",
+    "types":["Fire"],
+    "icon":"images/pokemon/37 HOME (Ver. 3.0.0).png"
+  },
+  "VULPIX-ALOLA": {
+    "name":"Vulpix",
+    "types":["Ice"],
+    "icon":"images/pokemon/37A HOME.png"
+  },
+  "NINETALES": {
+    "name":"Ninetales",
+    "types":["Fire"],
+    "icon":"images/pokemon/38 HOME (Ver. 3.0.0).png"
+  },
+  "NINETALES-ALOLA": {
+    "name":"Ninetales",
+    "types":["Ice","Fairy"],
+    "icon":"images/pokemon/38A HOME.png"
+  },
+  "JIGGLYPUFF": {
+    "name":"Jigglypuff",
+    "types":["Normal","Fairy"],
+    "icon":"images/pokemon/39 HOME.png"
+  },
+  "WIGGLYTUFF": {
+    "name":"Wigglytuff",
+    "types":["Normal","Fairy"],
+    "icon":"images/pokemon/40 HOME.png"
+  },
+  "ZUBAT": {
+    "name":"Zubat",
+    "types":["Poison","Flying"],
+    "icon":"images/pokemon/41 HOME.png"
+  },
+  "GOLBAT": {
+    "name":"Golbat",
+    "types":["Poison","Flying"],
+    "icon":"images/pokemon/42 HOME.png"
+  },
+  "ODDISH": {
+    "name":"Oddish",
+    "types":["Grass","Poison"],
+    "icon":"images/pokemon/43 HOME (Ver. 3.2.1).png"
+  },
+  "GLOOM": {
+    "name":"Gloom",
+    "types":["Grass","Poison"],
+    "icon":"images/pokemon/44 HOME (Ver. 3.2.1).png"
+  },
+  "VILEPLUME": {
+    "name":"Vileplume",
+    "types":["Grass","Poison"],
+    "icon":"images/pokemon/45 HOME (Ver. 3.2.1).png"
+  },
+  "PARAS": {
+    "name":"Paras",
+    "types":["Bug", "Grass"],
+    "icon":"images/pokemon/46 HOME.png"
+  },
+  "PARASECT": {
+    "name":"Parasect",
+    "types":["Bug","Grass"],
+    "icon":"images/pokemon/47 HOME.png"
+  },
+  "VENONAT": {
+    "name":"Venonat",
+    "types":["Bug","Poison"],
+    "icon":"images/pokemon/48 HOME.png"
+  },
+  "VENOMOTH": {
+    "name":"Venomoth",
+    "types":["Bug","Poison"],
+    "icon":"images/pokemon/49 HOME.png"
+  },
+  "DIGLETT": {
+    "name":"Diglett",
+    "types":["Ground"],
+    "icon":"images/pokemon/50 HOME.png"
+  },
+  "DIGLETT-ALOLA": {
+    "name":"Diglett",
+    "types":["Ground","Steel"],
+    "icon":"images/pokemon/50A HOME.png"
+  },
+  "DUGTRIO": {
+    "name":"Dugtrio",
+    "types":["Ground"],
+    "icon":"images/pokemon/51 HOME.png"
+  },
+  "DUGTRIO-ALOLA": {
+    "name":"Dugtrio",
+    "types":["Ground","Steel"],
+    "icon":"images/pokemon/51A HOME.png"
   }
 }

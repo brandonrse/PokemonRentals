@@ -5,9 +5,15 @@ var typesJSON;
 var pokemonJSON;
 var movesJSON;
 
+var selectedInput = 1;
 var pokemonKeys;
 
-var showdownForm = document.getElementsByClassName('showdown-form')[0];
+var showdownForm = document.getElementsByClassName("showdown-form")[0];
+var pokemonForm = document.getElementsByClassName("pokemon-form")[0];
+let showdownDiv = document.getElementById("showdown-div");
+let pokemonFormDiv = document.getElementById("pokemon-form-div");
+
+var selectPokemon1 = document.getElementById("selectPokemon1");
 
 //Font
 var fontBold = new FontFace("Cabin Condensed-Bold", "url(fonts/CabinCondensed-Bold.ttf)")
@@ -16,6 +22,9 @@ var fontRegular = new FontFace("Cabin Condensed-Regular", "url(fonts/CabinConden
 var fontSemiBold = new FontFace("Cabin Condensed-SemiBold", "url(fonts/CabinCondensed-SemiBold.ttf)")
 
 document.addEventListener("DOMContentLoaded", function() {
+  pokemonFormDiv.setAttribute("hidden", false);
+  showdownDiv.removeAttribute("hidden");
+  
   loadImage("images/Background.png")
     .then(image => ctx.drawImage(image, 0, 0))
 
@@ -27,7 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(json => pokemonJSON = json)
     .then(x => pokemonKeys = Object.keys(pokemonJSON))
-    .then(y => console.log(pokemonKeys));
+    .then(y => console.log(pokemonKeys))
+    .then(function(x) {
+      for(var i = 0; i < pokemonKeys.length; i++) {
+        let option = pokemonKeys[i][0] + pokemonKeys[i].toLowerCase().slice(1);
+        let optionElement = document.createElement("option");
+        optionElement.textContent = option;
+        optionElement.value = pokemonKeys[i];
+        selectPokemon1.appendChild(optionElement);
+      }
+    });
 
   fetch("moves.json")
     .then(response => response.json())
@@ -63,9 +81,8 @@ function loadImage(src) {
 }
 
 function handleRadioChange(src) {
-  let showdownDiv = document.getElementById("showdown-div");
-  let pokemonFormDiv = document.getElementById("pokemon-form-div");
-  console.log("click");
+  showdownDiv = document.getElementById("showdown-div");
+  pokemonFormDiv = document.getElementById("pokemon-form-div");
 
   if (src.id == "showdownRadio1") {
     selectedInput = 1;
@@ -114,6 +131,56 @@ showdownForm.addEventListener('submit', async (e) => {
   ctx.fillStyle = 'white';
 
 });
+
+pokemonForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  var form = e.target;
+  let pokemonObj = [];
+
+  let start = 2;
+  for (let i = 0; i < 6; i++) {
+    let pokemonData = pokemonJSON[form[start].value];
+    if (form[start].value != "None") {
+      pokemonObj.push(
+        {
+          name: pokemonData.name,
+          nickname: form[start + 1].value,
+          level: form[start + 2].value,
+          gender: form[start + 3].value,
+          shiny: form[start + 4].value,
+          ability: form[start + 5].value,
+          nature: form[start + 6].value,
+          item: form[start + 7].value,
+          teraType: form[start + 8].value,
+          hiddenPower: form[start + 9].value,
+          moves:[form[start + 10].value, form[start + 11].value, form[start + 12].value, form[start + 13].value],
+          evs: [form[start + 14].value, form[start + 15].value, form[start + 16].value, form[start + 17].value, form[start + 18].value, form[start + 19].value],
+          ivs: [form[start + 20].value, form[start + 21].value, form[start + 22].value, form[start + 23].value, form[start + 24].value, form[start + 25].value],
+        }
+      );
+    }
+    start += 26;
+  }
+
+  clearCanvas();
+  await loadImage("images/Background.png")
+    .then(image => ctx.drawImage(image, 0, 0))
+    .then(function(x)  {
+      ctx.font = '30pt Cabin Condensed-Regular';
+      ctx.fillStyle = 'white';
+      ctx.fillText(form[0].value, 85, 111);
+      ctx.fillText(form[1].value, 552, 111);
+
+      let pokemonSlot = 1;
+      pokemonObj.forEach(pkmn => {
+        drawPokemon(pkmn, pokemonSlot);
+        pokemonSlot += 1;
+      });
+    })
+    ;
+
+  ctx.fillStyle = 'white';
+})
 
 /**
  * @param {Object} pokemon Pokemon object
@@ -188,6 +255,12 @@ function drawPokemon(pokemon, slot) {
   else if (pokemon.gender == "F") {
     loadImage("images/F.png")
       .then(image => ctx.drawImage(image, boxPosition[0] + 116, boxPosition[1] + 71, 35, 35))
+  }
+
+  //Shiny
+  if (pokemon.shiny) {
+    loadImage("images/ShinySVStar.png")
+      .then(image => ctx.drawImage(image, boxPosition[0] + 155, boxPosition[1] + 71, 28, 31))
   }
 
   //EVs and IVs
@@ -295,7 +368,6 @@ function drawPokemon(pokemon, slot) {
   });
 
   //Pokemon
-  console.log(pokemonKeys.includes(pokemon.name.toUpperCase()));
   if (pokemonKeys.includes(pokemon.name.toUpperCase())) {
     let pokemonData = pokemonJSON[pokemon.name.toUpperCase()];
     loadImage(pokemonData.icon)
@@ -305,13 +377,17 @@ function drawPokemon(pokemon, slot) {
     let typeIcon = typesJSON[pokemonData.types[0]].icon;
 
     loadImage(typeIcon)
-        .then(image => ctx.drawImage(image, boxPosition[0] + 317, boxPosition[1] + 20, 40, 40));
+        .then(image => ctx.drawImage(image, boxPosition[0] + 311, boxPosition[1] + 20, 40, 40));
+
     if (pokemonData.types.length > 1) {
       typeIcon = typesJSON[pokemonData.types[1]].icon;
-
       loadImage(typeIcon)
         .then(image => ctx.drawImage(image, boxPosition[0] + 357, boxPosition[1] + 20, 40, 40));
+    } else {
+      loadImage('images/No Type.png')
+        .then(image => ctx.drawImage(image, boxPosition[0] + 357, boxPosition[1] + 20, 40, 40));
     }
+
     if (pokemon.teraType != "") {
       typeIcon = typesJSON[pokemon.teraType].teraIcon;
       loadImage(typeIcon)
@@ -331,7 +407,16 @@ function drawPokemon(pokemon, slot) {
   let moveTextHeight = boxPosition[1] + 51;
   pokemon.moves.forEach(move => {
     let moveType = movesJSON[move.toUpperCase()];
-    typeIcon = typesJSON[moveType].icon;
+    if (moveType == undefined) {
+      typeIcon = "images/No Type.png";
+    } 
+    //Hidden Power
+    else if (move.toUpperCase() == "HIDDEN POWER") {
+      typeIcon = typesJSON[pokemon.hiddenPower].icon;
+    }
+    else {
+      typeIcon = typesJSON[moveType].icon;
+    }
 
     loadImage(typeIcon)
       .then(image => ctx.drawImage(image, boxPosition[0] + 488, moveTypeHeight, 40, 40))
@@ -530,6 +615,28 @@ function getAllIvs(ivs = "") {
   });
 
   return result;
+}
+
+function downloadImage() {
+  let canvas = document.getElementById("team-canvas");
+  let teamName = document.getElementById("teamName").value;
+  let imageToDownload = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+  let link = document.createElement("a");
+
+  if (teamName != "" || teamName != undefined) {
+    link.download = teamName + ".png";
+  } else {
+    link.download = "team.png";
+  }
+
+  link.href = imageToDownload;
+  console.log(link);
+  link.click();
+
+}
+
+function resetForm() {
+  pokemonForm.reset();
 }
 
 function natureEvs(nature, evs) {
