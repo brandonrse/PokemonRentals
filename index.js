@@ -202,9 +202,11 @@ function drawPokemon(pokemon, slot) {
   });
 
   //Pokemon
-  let pokemonData = pokemonJSON[pokemon.name.toUpperCase()];
-  loadImage(pokemonData.icon)
-      .then(image => ctx.drawImage(image,  boxPosition[0] + 282, boxPosition[1] + 65, 165, 165))
+  if (pokemonKeys.includes(pokemon.name.toUpperCase())) {
+    let pokemonData = pokemonJSON[pokemon.name.toUpperCase()];
+    loadImage(pokemonData.icon)
+        .then(image => ctx.drawImage(image,  boxPosition[0] + 282, boxPosition[1] + 65, 165, 165))
+  }
 
   //Types  
   let typeIcon = typesJSON[pokemonData.types[0]].icon;

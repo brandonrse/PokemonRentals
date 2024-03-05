@@ -2,241 +2,241 @@
   "BULBASAUR": {
     "name":"Bulbasaur",
     "types":["Grass", "Poison"],
-    "icon":"/images/pokemon/1 HOME (Ver. 3.2.1).png"
+    "icon":"images/pokemon/1 HOME (Ver. 3.2.1).png"
   },
   "IVYSAUR": {
     "name":"Ivysaur",
     "types":["Grass", "Poison"],
-    "icon":"/images/pokemon/2 HOME (Ver. 3.2.1).png"
+    "icon":"images/pokemon/2 HOME (Ver. 3.2.1).png"
   },
   "VENUSAUR": {
     "name":"Venusaur",
     "types":["Grass", "Poison"],
-    "icon":"/images/pokemon/3 HOME (Ver. 3.2.1).png"
+    "icon":"images/pokemon/3 HOME (Ver. 3.2.1).png"
   },
   "VENUSAUR-MEGA": {
     "name":"Venusaur",
     "types":["Grass", "Poison"],
-    "icon":"/images/pokemon/3M HOME.png"
+    "icon":"images/pokemon/3M HOME.png"
   },
   "CHARMANDER": {
     "name":"Charmander",
     "types":["Fire"],
-    "icon":"/images/pokemon/4 HOME.png"
+    "icon":"images/pokemon/4 HOME.png"
   },
   "CHARMELEON": {
     "name":"Charmeleon",
     "types":["Fire"],
-    "icon":"/images/pokemon/5 HOME.png"
+    "icon":"images/pokemon/5 HOME.png"
   },
   "CHARIZARD": {
     "name":"Charizard",
     "types":["Fire", "Flying"],
-    "icon":"/images/pokemon/6 HOME.png"
+    "icon":"images/pokemon/6 HOME.png"
   },
   "CHARIZARD-MEGA-X": {
     "name":"Charizard",
     "types":["Fire", "Dragon"],
-    "icon":"/images/pokemon/6MX HOME.png"
+    "icon":"images/pokemon/6MX HOME.png"
   },
   "CHARIZARD-MEGA-Y": {
     "name":"Charizard",
     "types":["Fire", "Flying"],
-    "icon":"/images/pokemon/6MY HOME.png"
+    "icon":"images/pokemon/6MY HOME.png"
   },
   "SQUIRTLE": {
     "name":"Squirtle",
     "types":["Water"],
-    "icon":"/images/pokemon/7 HOME (Ver. 3.2.1).png"
+    "icon":"images/pokemon/7 HOME (Ver. 3.2.1).png"
   },
   "WARTORTLE": {
     "name":"Wartortle",
     "types":["Water"],
-    "icon":"/images/pokemon/8 HOME (Ver. 3.2.1).png"
+    "icon":"images/pokemon/8 HOME (Ver. 3.2.1).png"
   },
   "BLASTOISE": {
     "name":"Blastoise",
     "types":["Water"],
-    "icon":"/images/pokemon/9 HOME (Ver. 3.2.1).png"
+    "icon":"images/pokemon/9 HOME (Ver. 3.2.1).png"
   },
   "BLASTOISE-MEGA": {
     "name":"Blastoise",
     "types":["Water"],
-    "icon":"/images/pokemon/9M HOME.png"
+    "icon":"images/pokemon/9M HOME.png"
   },
   "CATERPIE": {
     "name":"Caterpie",
     "types":["Bug"],
-    "icon":"/images/pokemon/10 HOME.png"
+    "icon":"images/pokemon/10 HOME.png"
   },
   "METAPOD": {
     "name":"Metapod",
     "types":["Bug"],
-    "icon":"/images/pokemon/11 HOME.png"
+    "icon":"images/pokemon/11 HOME.png"
   },
   "BUTTERFREE": {
     "name":"Butterfree",
     "types":["Bug", "Flying"],
-    "icon":"/images/pokemon/12 HOME.png"
+    "icon":"images/pokemon/12 HOME.png"
   },
   "WEEDLE": {
     "name":"Weedle",
     "types":["Bug", "Poison"],
-    "icon":"/images/pokemon/13 HOME.png"
+    "icon":"images/pokemon/13 HOME.png"
   },
   "KAKUNA": {
     "name":"Kakuna",
     "types":["Bug", "Poison"],
-    "icon":"/images/pokemon/14 HOME.png"
+    "icon":"images/pokemon/14 HOME.png"
   },
   "BEEDRILL": {
     "name":"Beedrill",
     "types":["Bug", "Poison"],
-    "icon":"/images/pokemon/15 HOME.png"
+    "icon":"images/pokemon/15 HOME.png"
   },
   "BEEDRIL-MEGA": {
     "name":"Beedrill",
     "types":["Bug"],
-    "icon":"/images/pokemon/15M HOME.png"
+    "icon":"images/pokemon/15M HOME.png"
   },
   "PIDGEY": {
     "name":"Pidgey",
     "types":["Normal", "Flying"],
-    "icon":"/images/pokemon/16 HOME.png"
+    "icon":"images/pokemon/16 HOME.png"
   },
   "PIDGEOTTO": {
     "name":"Pidgeotto",
     "types":["Normal", "Flying"],
-    "icon":"/images/pokemon/17 HOME.png"
+    "icon":"images/pokemon/17 HOME.png"
   },
   "PIDGEOT": {
     "name":"Pidgeot",
     "types":["Normal","Flying"],
-    "icon":"/images/pokemon/18 HOME.png"
+    "icon":"images/pokemon/18 HOME.png"
   },
   "PIDGEOT-MEGA": {
     "name":"Pidgeot",
     "types":["Normal","Flying"],
-    "icon":"/images/pokemon/18M HOME.png"
+    "icon":"images/pokemon/18M HOME.png"
   },
   "RATTATA": {
     "name":"Rattata",
     "types":["Normal"],
-    "icon":"/images/pokemon/19 HOME.png"
+    "icon":"images/pokemon/19 HOME.png"
   },
   "RATTATA-ALOLA": {
     "name":"Rattata",
     "types":["Dark","Normal"],
-    "icon":"/images/pokemon/19A HOME.png"
+    "icon":"images/pokemon/19A HOME.png"
   },
   "RATICATE": {
     "name":"Raticate",
     "types":["Normal"],
-    "icon":"/images/pokemon/20 HOME.png"
+    "icon":"images/pokemon/20 HOME.png"
   },
   "RATICATE-ALOLA": {
     "name":"Raticate",
     "types":["Dark","Normal"],
-    "icon":"/images/pokemon/20A HOME.png"
+    "icon":"images/pokemon/20A HOME.png"
   },
   "SPEAROW": {
     "name":"Spearow",
     "types":["Normal","Flying"],
-    "icon":"/images/pokemon/21 HOME.png"
+    "icon":"images/pokemon/21 HOME.png"
   },
   "FEAROW": {
     "name":"Fearow",
     "types":["Normal","Flying"],
-    "icon":"/images/pokemon/22 HOME.png"
+    "icon":"images/pokemon/22 HOME.png"
   },
   "EKANS": {
     "name":"Ekans",
     "types":["Poison"],
-    "icon":"/images/pokemon/23 HOME.png"
+    "icon":"images/pokemon/23 HOME.png"
   },
   "ARBOK": {
     "name":"Arbok",
     "types":["Poison"],
-    "icon":"/images/pokemon/24 HOME(Ver. 3.0.0).png"
+    "icon":"images/pokemon/24 HOME(Ver. 3.0.0).png"
   },
   "PIKACHU": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25 HOME.png"
+    "icon":"images/pokemon/25 HOME.png"
   },
   "PIKACHU-ORIGINAL": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca1 HOME.png"
+    "icon":"images/pokemon/25Ca1 HOME.png"
   },
   "PIKACHU-HOENN": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca2 HOME.png"
+    "icon":"images/pokemon/25Ca2 HOME.png"
   },
   "PIKACHU-SINNOH": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca3 HOME.png"
+    "icon":"images/pokemon/25Ca3 HOME.png"
   },
   "PIKACHU-UNOVA": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca4 HOME.png"
+    "icon":"images/pokemon/25Ca4 HOME.png"
   },
   "PIKACHU-KALOS": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca5 HOME.png"
+    "icon":"images/pokemon/25Ca5 HOME.png"
   },
   "PIKACHU-ALOLA": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca6 HOME.png"
+    "icon":"images/pokemon/25Ca6 HOME.png"
   },
   "PIKACHU-PARTNER": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca7 HOME.png"
+    "icon":"images/pokemon/25Ca7 HOME.png"
   },
   "PIKACHU-WORLD": {
     "name":"Pikachu",
     "types":["Electric"],
-    "icon":"/images/pokemon/25Ca8 HOME.png"
+    "icon":"images/pokemon/25Ca8 HOME.png"
   },
   "RAICHU": {
     "name":"Raichu",
     "types":["Electric"],
-    "icon":"/images/pokemon/26 HOME.png"
+    "icon":"images/pokemon/26 HOME.png"
   },
   "RAICHU-ALOLA": {
     "name":"Raichu",
     "types":["Electric", "Psychic"],
-    "icon":"/images/pokemon/26A HOME.png"
+    "icon":"images/pokemon/26A HOME.png"
   },
   "SANDSHREW": {
     "name":"Sandshrew",
     "types":["Ground"],
-    "icon":"/images/pokemon/27 HOME.png"
+    "icon":"images/pokemon/27 HOME.png"
   },
   "SANDSHREW-ALOLA": {
     "name":"Sandshrew",
     "types":["Ice", "Steel"],
-    "icon":"/images/pokemon/27A HOME.png"
+    "icon":"images/pokemon/27A HOME.png"
   },
   "SANDSLASH": {
     "name":"Sandslash",
     "types":["Ground"],
-    "icon":"/images/pokemon/28 HOME.png"
+    "icon":"images/pokemon/28 HOME.png"
   },
   "SANDSLASH-ALOLA": {
     "name":"Sandslash",
     "types":["Ice","Steel"],
-    "icon":"/images/pokemon/28 HOME.png"
+    "icon":"images/pokemon/28 HOME.png"
   },
   "NIDORAN-F": {
     "name":"Nidoran♀",
     "types":["Poison"],
-    "icon":"/images/pokemon/29 HOME.png"
+    "icon":"images/pokemon/29 HOME.png"
   }
 }
