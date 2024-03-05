@@ -1139,6 +1139,21 @@
     "types":["Dark","Ghost"],
     "icon":"images/pokemon/302M HOME.png"
   },
+  "TRAPINCH": {
+    "name":"Trapinch",
+    "types":["Ground"],
+    "icon":"images/pokemon/328 HOME (Ver. 3.2.1).png"
+  },
+  "VIBRAVA": {
+    "name":"Vibrava",
+    "types":["Ground","Dragon"],
+    "icon":"images/pokemon/329 HOME (Ver. 3.2.1).png"
+  },
+  "FLYGON": {
+    "name":"Flygon",
+    "types":["Ground","Dragon"],
+    "icon":"images/pokemon/330 HOME.png"
+  },
   "LUVDISC": {
     "name":"Luvdisc",
     "types":["Water"],
@@ -1158,6 +1173,51 @@
     "name":"Registeel",
     "types":["Steel"],
     "icon":"images/pokemon/379 HOME.png"
+  },
+  "TURTWIG": {
+    "name":"Turtwig",
+    "types":["Grass"],
+    "icon":"images/pokemon/387 HOME.png"
+  },
+  "GROTLE": {
+    "name":"Grotle",
+    "types":["Grass"],
+    "icon":"images/pokemon/388 HOME.png"
+  },
+  "TORTERRA": {
+    "name":"Torterra",
+    "types":["Grass","Ground"],
+    "icon":"images/pokemon/389 HOME.png"
+  },
+  "CHIMCHAR": {
+    "name":"Chimchar",
+    "types":["Fire"],
+    "icon":"images/pokemon/390 HOME.png"
+  },
+  "MONFERNO": {
+    "name":"Monferno",
+    "types":["Fire","Fighting"],
+    "icon":"images/pokemon/391 HOME (Ver. 3.0.0).png"
+  },
+  "INFERNAPE": {
+    "name":"Infernape",
+    "types":["Fire","Fighting"],
+    "icon":"images/pokemon/392 HOME.png"
+  },
+  "PIPLUP": {
+    "name":"Piplup",
+    "types":["Water"],
+    "icon":"images/pokemon/393 HOME.png"
+  },
+  "PRINPLUP": {
+    "name":"Prinplup",
+    "types":["Water"],
+    "icon":"images/pokemon/394 HOME.png"
+  },
+  "EMPOLEON": {
+    "name":"Empoleon",
+    "types":["Water","Steel"],
+    "icon":"images/pokemon/395 HOME.png"
   },
   "SHELLOS": {
     "name":"Shellos",
@@ -1563,6 +1623,16 @@
     "name":"Quaquaval",
     "types":["Water","Fighting"],
     "icon":"images/pokemon/914 HOME.png"
+  },
+  "FIDOUGH": {
+    "name":"Fidough",
+    "types":["Fairy"],
+    "icon":"images/pokemon/926 HOME.png"
+  },
+  "DACHSBUN": {
+    "name":"Dachsbun",
+    "types":["Fairy"],
+    "icon":"images/pokemon/927 HOME.png"
   },
   "SMOLIV": {
     "name":"Smoliv",

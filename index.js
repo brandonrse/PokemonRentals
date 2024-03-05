@@ -14,6 +14,11 @@ let showdownDiv = document.getElementById("showdown-div");
 let pokemonFormDiv = document.getElementById("pokemon-form-div");
 
 var selectPokemon1 = document.getElementById("selectPokemon1");
+var selectPokemon2 = document.getElementById("selectPokemon2");
+var selectPokemon3 = document.getElementById("selectPokemon3");
+var selectPokemon4 = document.getElementById("selectPokemon4");
+var selectPokemon5 = document.getElementById("selectPokemon5");
+var selectPokemon6 = document.getElementById("selectPokemon6");
 
 //Font
 var fontBold = new FontFace("Cabin Condensed-Bold", "url(fonts/CabinCondensed-Bold.ttf)")
@@ -39,10 +44,31 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(function(x) {
       for(var i = 0; i < pokemonKeys.length; i++) {
         let option = pokemonKeys[i][0] + pokemonKeys[i].toLowerCase().slice(1);
-        let optionElement = document.createElement("option");
-        optionElement.textContent = option;
-        optionElement.value = pokemonKeys[i];
-        selectPokemon1.appendChild(optionElement);
+        let optionElement1 = document.createElement("option");
+        optionElement1.textContent = option;
+        optionElement1.value = pokemonKeys[i];
+        let optionElement2 = document.createElement("option");
+        optionElement2.textContent = option;
+        optionElement2.value = pokemonKeys[i];
+        let optionElement3 = document.createElement("option");
+        optionElement3.textContent = option;
+        optionElement3.value = pokemonKeys[i];
+        let optionElement4 = document.createElement("option");
+        optionElement4.textContent = option;
+        optionElement4.value = pokemonKeys[i];
+        let optionElement5 = document.createElement("option");
+        optionElement5.textContent = option;
+        optionElement5.value = pokemonKeys[i];
+        let optionElement6 = document.createElement("option");
+        optionElement6.textContent = option;
+        optionElement6.value = pokemonKeys[i];
+
+        selectPokemon1.appendChild(optionElement1);
+        selectPokemon2.appendChild(optionElement2);
+        selectPokemon3.appendChild(optionElement3);
+        selectPokemon4.appendChild(optionElement4);
+        selectPokemon5.appendChild(optionElement5);
+        selectPokemon6.appendChild(optionElement6);
       }
     });
 
@@ -137,7 +163,7 @@ pokemonForm.addEventListener("submit", async (e) => {
     if (form[start].value != "None") {
       pokemonObj.push(
         {
-          name: pokemonData.name,
+          name: form[start].value,
           nickname: form[start + 1].value,
           level: form[start + 2].value,
           gender: form[start + 3].value,
@@ -220,7 +246,7 @@ function drawPokemon(pokemon, slot) {
 
   //Pokemon Name
   ctx.font = "30pt Cabin Condensed-Bold";
-  ctx.fillText(pokemon.nickname != "" ? pokemon.nickname : pokemon.name, boxPosition[0] + 24, boxPosition[1] + 52);
+  ctx.fillText(pokemon.nickname != "" ? pokemon.nickname : pokemonJSON[pokemon.name.toUpperCase()].name, boxPosition[0] + 24, boxPosition[1] + 52);
 
   //Level
   ctx.font = "18pt Cabin Condensed-Regular";
@@ -364,6 +390,7 @@ function drawPokemon(pokemon, slot) {
   //Pokemon
   if (pokemonKeys.includes(pokemon.name.toUpperCase())) {
     let pokemonData = pokemonJSON[pokemon.name.toUpperCase()];
+
     loadImage(pokemonData.icon)
         .then(image => ctx.drawImage(image,  boxPosition[0] + 282, boxPosition[1] + 65, 165, 165))
 
