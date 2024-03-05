@@ -165,9 +165,12 @@ function drawPokemon(pokemon, slot) {
   ctx.font = "18pt Cabin Condensed-Regular";
   ctx.fillText("Lv. " + pokemon.level, boxPosition[0] + 24, boxPosition[1] + 99);
 
+  //Nature
+  ctx.fillText(pokemon.nature, boxPosition[0] + 24, boxPosition[1] + 130);
+
   //Ability
   ctx.font = "24pt Cabin Condensed-Regular";
-  ctx.fillText(pokemon.ability, boxPosition[0] + 24, boxPosition[1] + 154);
+  ctx.fillText(pokemon.ability, boxPosition[0] + 24, boxPosition[1] + 169);
 
   //Item
   ctx.fillText(pokemon.item, boxPosition[0] + 66, boxPosition[1] + 210);
@@ -191,10 +194,100 @@ function drawPokemon(pokemon, slot) {
   ctx.font = "10pt Cabin Condensed-Bold";
   ctx.textAlign = "center";
   let height = boxPosition[1] + 64;
-  pokemon.evs.forEach(ev => {
-    ctx.fillText(ev == "999" ? "0" : ev, boxPosition[0] + 838, height);
+  let evs = pokemon.evs;
+  switch (pokemon.nature) {
+    case "Adamant":
+      evs[1] = "+" + evs[1];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Lonely":
+      evs[1] = "+" + evs[1];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Naughty":
+      evs[1] = "+" + evs[1];
+      evs[4] = "-" + evs[4];
+      break;
+    case "Brave":
+      evs[1] = "+" + evs[1];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Bold":
+      evs[2] = "+" + evs[2];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Impish":
+      evs[2] = "+" + evs[2];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Lax":
+      evs[2] = "+" + evs[2];
+      evs[4] = "-" + evs[4];
+      break;
+    case "Relaxed":
+      evs[2] = "+" + evs[2];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Modest":
+      evs[3] = "+" + evs[3];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Mild":
+      evs[3] = "+" + evs[3];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Rash":
+      evs[3] = "+" + evs[3];
+      evs[4] = "-" + evs[4];
+      break;
+    case "Quiet":
+      evs[3] = "+" + evs[3];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Calm":
+      evs[4] = "+" + evs[4];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Gentle":
+      evs[4] = "+" + evs[4];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Careful":
+      evs[4] = "+" + evs[4];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Sassy":
+      evs[4] = "+" + evs[4];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Timid":
+      evs[5] = "+" + evs[5];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Hasty":
+      evs[5] = "+" + evs[5];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Jolly":
+      evs[5] = "+" + evs[5];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Naive":
+      evs[5] = "+" + evs[5];
+      evs[4] = "-" + evs[4];
+      break;
+    default:
+      break;
+  }  
+
+  evs.forEach(ev => {
+    if (ev == "999") { ev = "0"; }
+    else if (ev == "+999") { ev = "+0"; }
+    else if (ev == "-999") { ev = "-0"; }
+    ctx.fillText(ev, boxPosition[0] + 838, height);
     height += 16.7;
   });
+
   height = boxPosition[1] + 64;
   pokemon.ivs.forEach(iv => { 
     ctx.fillText(iv == "999" ? "31" : iv, boxPosition[0] + 866, height);
@@ -202,32 +295,34 @@ function drawPokemon(pokemon, slot) {
   });
 
   //Pokemon
+  console.log(pokemonKeys.includes(pokemon.name.toUpperCase()));
   if (pokemonKeys.includes(pokemon.name.toUpperCase())) {
     let pokemonData = pokemonJSON[pokemon.name.toUpperCase()];
     loadImage(pokemonData.icon)
         .then(image => ctx.drawImage(image,  boxPosition[0] + 282, boxPosition[1] + 65, 165, 165))
-  }
 
-  //Types  
-  let typeIcon = typesJSON[pokemonData.types[0]].icon;
-
-  loadImage(typeIcon)
-      .then(image => ctx.drawImage(image, boxPosition[0] + 317, boxPosition[1] + 20, 40, 40));
-  if (pokemonData.types.length > 1) {
-    typeIcon = typesJSON[pokemonData.types[1]].icon;
+    //Types  
+    let typeIcon = typesJSON[pokemonData.types[0]].icon;
 
     loadImage(typeIcon)
-      .then(image => ctx.drawImage(image, boxPosition[0] + 357, boxPosition[1] + 20, 40, 40));
+        .then(image => ctx.drawImage(image, boxPosition[0] + 317, boxPosition[1] + 20, 40, 40));
+    if (pokemonData.types.length > 1) {
+      typeIcon = typesJSON[pokemonData.types[1]].icon;
+
+      loadImage(typeIcon)
+        .then(image => ctx.drawImage(image, boxPosition[0] + 357, boxPosition[1] + 20, 40, 40));
+    }
+    if (pokemon.teraType != "") {
+      typeIcon = typesJSON[pokemon.teraType].teraIcon;
+      loadImage(typeIcon)
+        .then(image => ctx.drawImage(image, boxPosition[0] + 417, boxPosition[1] + 20, 40, 40));
+    } else {
+      typeIcon = typesJSON[pokemonData.types[0]].teraIcon;
+      loadImage(typeIcon)
+        .then(image => ctx.drawImage(image, boxPosition[0] + 417, boxPosition[1] + 20, 40, 40));
+    }
   }
-  if (pokemon.teraType != "") {
-    typeIcon = typesJSON[pokemon.teraType].teraIcon;
-    loadImage(typeIcon)
-      .then(image => ctx.drawImage(image, boxPosition[0] + 417, boxPosition[1] + 20, 40, 40));
-  } else {
-    typeIcon = typesJSON[pokemonData.types[0]].teraIcon;
-    loadImage(typeIcon)
-      .then(image => ctx.drawImage(image, boxPosition[0] + 417, boxPosition[1] + 20, 40, 40));
-  }
+
   
   //Moves
   ctx.font = "24pt Cabin Condensed-Regular";
@@ -435,4 +530,92 @@ function getAllIvs(ivs = "") {
   });
 
   return result;
+}
+
+function natureEvs(nature, evs) {
+  switch (nature) {
+    case "Adamant":
+      evs[1] = "+" + evs[1];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Lonely":
+      evs[1] = "+" + evs[1];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Naughty":
+      evs[1] = "+" + evs[1];
+      evs[4] = "-" + evs[4];
+      break;
+    case "Brave":
+      evs[1] = "+" + evs[1];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Bold":
+      evs[2] = "+" + evs[2];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Impish":
+      evs[2] = "+" + evs[2];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Lax":
+      evs[2] = "+" + evs[2];
+      evs[4] = "-" + evs[4];
+      break;
+    case "Relaxed":
+      evs[2] = "+" + evs[2];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Modest":
+      evs[3] = "+" + evs[3];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Mild":
+      evs[3] = "+" + evs[3];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Rash":
+      evs[3] = "+" + evs[3];
+      evs[4] = "-" + evs[4];
+      break;
+    case "Quiet":
+      evs[3] = "+" + evs[3];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Calm":
+      evs[4] = "+" + evs[4];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Gentle":
+      evs[4] = "+" + evs[4];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Careful":
+      evs[4] = "+" + evs[4];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Sassy":
+      evs[4] = "+" + evs[4];
+      evs[5] = "-" + evs[5];
+      break;
+    case "Timid":
+      evs[5] = "+" + evs[5];
+      evs[1] = "-" + evs[1];
+      break;
+    case "Hasty":
+      evs[5] = "+" + evs[5];
+      evs[2] = "-" + evs[2];
+      break;
+    case "Jolly":
+      evs[5] = "+" + evs[5];
+      evs[3] = "-" + evs[3];
+      break;
+    case "Naive":
+      evs[5] = "+" + evs[5];
+      evs[4] = "-" + evs[4];
+      break;
+    default:
+      break;
+  }  
+  return evs;
 }
