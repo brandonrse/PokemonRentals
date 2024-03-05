@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Team Maker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <nav>
+    <h1 class="text-center">Rental Team Visual</h1>
+  </nav>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-2 form-check">
+        <input class="form-check-input" type="radio" name="showdownRadio" id="showdownRadio1" checked onchange="handleRadioChange(this);">
+        <label class="form-check-label" for="showdownRadio1">
+          Showdown format
+        </label>
+      </div>
+
+      <div class="col-md-2 form-check">
+        <input class="form-check-input" type="radio" name="showdownRadio" id="formRadio1" onchange="handleRadioChange(this);">
+        <label class="form-check-label" for="formRadio1">
+          Form
+        </label>
+      </div>
+
+      <div id="showdown-div">
+        <form class="row showdown-form">
+          
+          <div class="col-md-2">
+            <label for="teamName" class="form-label">Team Name</label>
+            <input type="text" class="form-control" id="teamName" required maxlength="20">
+          </div>
+          
+          <div class="col-md-2">
+            <label for="playerName" class="form-label">Player Name</label>
+            <input type="text" class="form-control" id="playerName" required maxlength="20">
+          </div>
+
+          <div class="mb-3">
+            <label for="showdownTextarea" class="form-label">Paste team</label>
+            <textarea class="form-control" id="showdownTextarea" rows="10" placeholder="Sandy Shocks @ Assault Vest  
+            Ability: Protosynthesis  
+            Tera Type: Ice  
+            EVs: 252 SpA / 4 SpD / 252 Spe  
+            Timid Nature  
+            IVs: 0 Atk  
+            - Thunderbolt  
+            - Earth Power  
+            - Tera Blast  
+            - Volt Switch  
+            "></textarea>
+          </div> 
+
+          <div class="">
+            <button type="submit" class="btn btn-primary mb-3">Generate</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="pokemon-form-div" hidden>
+        <form class="row pokemon-form">
+          
+          <div class="col-md-2">
+            <label for="teamName" class="form-label">Team Name</label>
+            <input type="text" class="form-control" id="teamName" required maxlength="20">
+          </div>
+          <div class="col-md-2">
+            <label for="playerName" class="form-label">Player Name</label>
+            <input type="text" class="form-control" id="playerName" required maxlength="20">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="team-canvas" width="1920" height="1080"></canvas>
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
