@@ -159,7 +159,6 @@ pokemonForm.addEventListener("submit", async (e) => {
 
   let start = 2;
   for (let i = 0; i < 6; i++) {
-    let pokemonData = pokemonJSON[form[start].value];
     if (form[start].value != "None") {
       pokemonObj.push(
         {
@@ -167,7 +166,7 @@ pokemonForm.addEventListener("submit", async (e) => {
           nickname: form[start + 1].value,
           level: form[start + 2].value,
           gender: form[start + 3].value,
-          shiny: form[start + 4].value,
+          shiny: form[start + 4].value == "Yes" ? true : false,
           ability: form[start + 5].value,
           nature: form[start + 6].value,
           item: form[start + 7].value,
