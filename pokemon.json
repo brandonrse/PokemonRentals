@@ -6673,5 +6673,10 @@
     "name":"Terapagos",
     "types":["Normal"],
     "icon":"images/pokemon/1024 HOME.png"
+  },
+  "PECHARUNT": {
+    "name":"Pecharunt",
+    "types":["Poison","Ghost"],
+    "icon":"images/pokemon/1025 HOME.png"
   }
 }

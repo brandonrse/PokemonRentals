@@ -264,7 +264,12 @@ function drawPokemon(pokemon, slot) {
   if (pokemon.item != "") {
     loadImage("images/items/" + pokemon.item + " SV.png")
       .then(image => ctx.drawImage(image, boxPosition[0] + 24, boxPosition[1] + 184, 35, 35))
-      .catch(rejected => console.log("Item image is unavailable"));
+      .catch(function(x) {
+        console.log("Unknown item");
+        loadImage("images/items/Unknown SV.png")
+          .then(unknown => ctx.drawImage(unknown, boxPosition[0] + 24, boxPosition[1] + 184, 35, 35));
+      })
+
   }
 
   //Gender
