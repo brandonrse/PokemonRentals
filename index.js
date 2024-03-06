@@ -21,10 +21,10 @@ var selectPokemon5 = document.getElementById("selectPokemon5");
 var selectPokemon6 = document.getElementById("selectPokemon6");
 
 //Font
-var fontBold = new FontFace("Cabin Condensed-Bold", "url(fonts/CabinCondensed-Bold.ttf)")
-var fontMedium = new FontFace("Cabin Condensed-Medium", "url(fonts/CabinCondensed-Medium.ttf)")
-var fontRegular = new FontFace("Cabin Condensed-Regular", "url(fonts/CabinCondensed-Regular.ttf)")
-var fontSemiBold = new FontFace("Cabin Condensed-SemiBold", "url(fonts/CabinCondensed-SemiBold.ttf)")
+var fontBold = new FontFace("Cabin Condensed-Bold", "url(fonts/CabinCondensed-Bold.ttf)");
+var fontMedium = new FontFace("Cabin Condensed-Medium", "url(fonts/CabinCondensed-Medium.ttf)");
+var fontRegular = new FontFace("Cabin Condensed-Regular", "url(fonts/CabinCondensed-Regular.ttf)");
+var fontSemiBold = new FontFace("Cabin Condensed-SemiBold", "url(fonts/CabinCondensed-SemiBold.ttf)");
 
 document.addEventListener("DOMContentLoaded", function() {
   pokemonFormDiv.setAttribute("hidden", false);
@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
         selectPokemon6.appendChild(optionElement6);
       }
     });
+    // .then(a => $('.editable-select').editableSelect());
 
   fetch("moves.json")
     .then(response => response.json())
