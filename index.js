@@ -591,6 +591,16 @@ function showdownParser(pokemonArr = []) {
     if (pokemonKeys.includes(word.toUpperCase().trim())) {
       pokemon.name = word.trim();
     }
+    // Silvally
+    else if (word.toUpperCase().trim().startsWith("SILVALLY")) {
+      pokemon.name = "Silvally";
+    }
+    else if (word.toUpperCase().trim().startsWith("MIMIKYU")) {
+      pokemon.name = "Mimikyu";
+    }
+    else if (word.toUpperCase().trim().startsWith("CRAMORANT")) {
+      pokemon.name = "Cramorant";
+    }
     else if (word.startsWith("(") && word.endsWith(")")) {
       let slicedWord = word.slice(1, -1);
       if (slicedWord == "F" || slicedWord == "M") {
