@@ -3934,6 +3934,71 @@
     "types":["Water","Fighting"],
     "icon":"images/pokemon/914 HOME.png"
   },
+  "LECHONK": {
+    "name":"Lechonk",
+    "types":["Normal"],
+    "icon":"images/pokemon/915 HOME.png"
+  },
+  "OINKOLOGNE": {
+    "name":"Oinkologne",
+    "types":["Normal"],
+    "icon":"images/pokemon/916 HOME.png"
+  },
+  "OINKOLOGNE-F": {
+    "name":"Oinkologne",
+    "types":["Normal"],
+    "icon":"images/pokemon/916F HOME.png"
+  },
+  "TAROUNTULA": {
+    "name":"Tarountula",
+    "types":["Bug"],
+    "icon":"images/pokemon/917 HOME.png"
+  },
+  "SPIDOPS": {
+    "name":"Spidops",
+    "types":["Bug"],
+    "icon":"images/pokemon/918 HOME.png"
+  },
+  "NYMBLE": {
+    "name":"Nymble",
+    "types":["Bug"],
+    "icon":"images/pokemon/919 HOME.png"
+  },
+  "LOKIX": {
+    "name":"Lokix",
+    "types":["Bug","Dark"],
+    "icon":"images/pokemon/920 HOME.png"
+  },
+  "PAWMI": {
+    "name":"Pawmi",
+    "types":["Electric"],
+    "icon":"images/pokemon/921 HOME.png"
+  },
+  "PAWMO": {
+    "name":"Pawmo",
+    "types":["Electric","Fighting"],
+    "icon":"images/pokemon/922 HOME.png"
+  },
+  "PAWMOT": {
+    "name":"Pawmot",
+    "types":["Electric","Fighting"],
+    "icon":"images/pokemon/923 HOME.png"
+  },
+  "TANDEMAUS": {
+    "name":"Tandemaus",
+    "types":["Normal"],
+    "icon":"images/pokemon/924 HOME.png"
+  },
+  "MAUSHOLD": {
+    "name":"Maushold",
+    "types":["Normal"],
+    "icon":"images/pokemon/925Fo3 HOME.png"
+  },
+  "MAUSHOLD-FOUR": {
+    "name":"Maushold",
+    "types":["Normal"],
+    "icon":"images/pokemon/925 HOME.png"
+  },
   "FIDOUGH": {
     "name":"Fidough",
     "types":["Fairy"],
@@ -3958,6 +4023,141 @@
     "name":"Arboliva",
     "types":["Grass","Normal"],
     "icon":"images/pokemon/930 HOME.png"
+  },
+  "SQUAWKABILLY": {
+    "name":"Squawkabilly",
+    "types":["Normal","Flying"],
+    "icon":"images/pokemon/931G HOME.png"
+  },
+  "SQUAWKABILLY-BLUE": {
+    "name":"Squawkabilly",
+    "types":["Normal","Flying"],
+    "icon":"images/pokemon/931B HOME.png"
+  },
+  "SQUAWKABILLY-WHITE": {
+    "name":"Squawkabilly",
+    "types":["Normal","Flying"],
+    "icon":"images/pokemon/931W HOME.png"
+  },
+  "SQUAWKABILLY-YELLOW": {
+    "name":"Squawkabilly",
+    "types":["Normal","Flying"],
+    "icon":"images/pokemon/931Y HOME.png"
+  },
+  "NACLI": {
+    "name":"Nacli",
+    "types":["Rock"],
+    "icon":"images/pokemon/932 HOME.png"
+  },
+  "NACLSTACK": {
+    "name":"Naclstack",
+    "types":["Rock"],
+    "icon":"images/pokemon/933 HOME.png"
+  },
+  "GARGANACL": {
+    "name":"Garganacl",
+    "types":["Rock"],
+    "icon":"images/pokemon/934 HOME.png"
+  },
+  "CHARCADET": {
+    "name":"Charcadet",
+    "types":["Fire"],
+    "icon":"images/pokemon/935 HOME.png"
+  },
+  "ARMAROUGE": {
+    "name":"Armarouge",
+    "types":["Fire","Psychic"],
+    "icon":"images/pokemon/936 HOME.png"
+  },
+  "CERULEDGE": {
+    "name":"Ceruledge",
+    "types":["Fire","Psychic"],
+    "icon":"images/pokemon/937 HOME.png"
+  },
+  "TADBULB": {
+    "name":"Tadbulb",
+    "types":["Electric"],
+    "icon":"images/pokemon/938 HOME.png"
+  },
+  "BELLIBOLT": {
+    "name":"Bellibolt",
+    "types":["Electric"],
+    "icon":"images/pokemon/939 HOME.png"
+  },
+  "WATTREL": {
+    "name":"Wattrel",
+    "types":["Electric","Flying"],
+    "icon":"images/pokemon/940 HOME.png"
+  },
+  "KILOWATTREL": {
+    "name":"Kilowattrel",
+    "types":["Electric","Flying"],
+    "icon":"images/pokemon/941 HOME.png"
+  },
+  "MASCHIFF": {
+    "name":"MASCHIFF",
+    "types":["Dark"],
+    "icon":"images/pokemon/942 HOME.png"
+  },
+  "MABOSSTIFF": {
+    "name":"Mabosstiff",
+    "types":["Dark"],
+    "icon":"images/pokemon/943 HOME.png"
+  },
+  "SHROODLE": {
+    "name":"Shroodle",
+    "types":["Poison","Normal"],
+    "icon":"images/pokemon/944 HOME.png"
+  },
+  "GRAFAIAI": {
+    "name":"Grafaiai",
+    "types":["Poison","Normal"],
+    "icon":"images/pokemon/945 HOME.png"
+  },
+  "BRAMBLIN": {
+    "name":"Bramblin",
+    "types":["Grass","Ghost"],
+    "icon":"images/pokemon/946 HOME.png"
+  },
+  "BRAMBLEGHAST": {
+    "name":"Brambleghast",
+    "types":["Grass","Ghost"],
+    "icon":"images/pokemon/947 HOME.png"
+  },
+  "TOEDSCOOL": {
+    "name":"Toedscool",
+    "types":["Ground","Grass"],
+    "icon":"images/pokemon/948 HOME.png"
+  },
+  "TOEDSCRUEL": {
+    "name":"Toedscruel",
+    "types":["Ground","Grass"],
+    "icon":"images/pokemon/949 HOME.png"
+  },
+  "KLAWF": {
+    "name":"Klawf",
+    "types":["Rock"],
+    "icon":"images/pokemon/950 HOME.png"
+  },
+  "CAPSAKID": {
+    "name":"Capsakid",
+    "types":["Grass"],
+    "icon":"images/pokemon/951 HOME.png"
+  },
+  "SCOVILLAIN": {
+    "name":"Scovillain",
+    "types":["Grass","Fire"],
+    "icon":"images/pokemon/952 HOME.png"
+  },
+  "RELLOR": {
+    "name":"Rellor",
+    "types":["Bug"],
+    "icon":"images/pokemon/953 HOME.png"
+  },
+  "RABSCA": {
+    "name":"Rabsca",
+    "types":["Bug","Psychic"],
+    "icon":"images/pokemon/954 HOME.png"
   },
   "FLITTLE": {
     "name":"Flittle",
@@ -3984,10 +4184,390 @@
     "types":["Fairy","Steel"],
     "icon":"images/pokemon/959 HOME.png"
   },
+  "WIGLETT": {
+    "name":"Wiglett",
+    "types":["Water"],
+    "icon":"images/pokemon/960 HOME.png"
+  },
+  "WUGTRIO": {
+    "name":"Wugtrio",
+    "types":["Water"],
+    "icon":"images/pokemon/961 HOME.png"
+  },
+  "BOMBIRDIER": {
+    "name":"Bombirdier",
+    "types":["Flying","Dark"],
+    "icon":"images/pokemon/962 HOME.png"
+  },
+  "FINIZEN": {
+    "name":"Finizen",
+    "types":["Water"],
+    "icon":"images/pokemon/963 HOME.png"
+  },
+  "PALAFIN": {
+    "name":"Palafin",
+    "types":["Water"],
+    "icon":"images/pokemon/964 HOME.png"
+  },
+  "PALAFIN-HERO": {
+    "name":"Palafin",
+    "types":["Water"],
+    "icon":"images/pokemon/964HERO HOME.png"
+  },
+  "VAROOM": {
+    "name":"Varoom",
+    "types":["Steel","Poison"],
+    "icon":"images/pokemon/965 HOME.png"
+  },
+  "REVAVROOM": {
+    "name":"Revavroom",
+    "types":["Steel","Poison"],
+    "icon":"images/pokemon/966 HOME.png"
+  },
+  "CYCLIZAR": {
+    "name":"Cyclizar",
+    "types":["Dragon","Normal"],
+    "icon":"images/pokemon/967 HOME.png"
+  },
   "ORTHWORM": {
     "name":"Orthworm",
     "types":["Steel"],
     "icon":"images/pokemon/968 HOME.png"
+  },
+  "GLIMMET": {
+    "name":"Glimmet",
+    "types":["Rock","Poison"],
+    "icon":"images/pokemon/969 HOME.png"
+  },
+  "GLIMMORA": {
+    "name":"Glimmora",
+    "types":["Rock","Poison"],
+    "icon":"images/pokemon/970 HOME.png"
+  },
+  "GREAVARD": {
+    "name":"Greavard",
+    "types":["Ghost"],
+    "icon":"images/pokemon/971 HOME.png"
+  },
+  "HOUNDSTONE": {
+    "name":"Houndstone",
+    "types":["Ghost"],
+    "icon":"images/pokemon/972 HOME.png"
+  },
+  "FLAMIGO": {
+    "name":"Flamigo",
+    "types":["Flying","Fighting"],
+    "icon":"images/pokemon/973 HOME.png"
+  },
+  "CETODDLE": {
+    "name":"Cetoddle",
+    "types":["Ice"],
+    "icon":"images/pokemon/974 HOME.png"
+  },
+  "CETITAN": {
+    "name":"Cetitan",
+    "types":["Ice"],
+    "icon":"images/pokemon/9975 HOME.png"
+  },
+  "VELUZA": {
+    "name":"Veluza",
+    "types":["Water","Psychic"],
+    "icon":"images/pokemon/976 HOME.png"
+  },
+  "DONDOZO": {
+    "name":"DONDOZO",
+    "types":["Water"],
+    "icon":"images/pokemon/977 HOME.png"
+  },
+  "TATSUGIRI": {
+    "name":"Tatsugiri",
+    "types":["Dragon","Water"],
+    "icon":"images/pokemon/978 HOME.png"
+  },
+  "TATSUGIRI-DROOPY": {
+    "name":"Tatsugiri",
+    "types":["Dragon","Water"],
+    "icon":"images/pokemon/978D HOME.png"
+  },
+  "TATSUGIRI-STRETCHY": {
+    "name":"Tatsugiri",
+    "types":["Dragon","Water"],
+    "icon":"images/pokemon/978S HOME.png"
+  },
+  "ANNIHILAPE": {
+    "name":"Annihilape",
+    "types":["Fighting","Ghost"],
+    "icon":"images/pokemon/979 HOME.png"
+  },
+  "CLODSIRE": {
+    "name":"Clodsire",
+    "types":["Poison","Ground"],
+    "icon":"images/pokemon/980 HOME.png"
+  },
+  "FARIGIRAF": {
+    "name":"Farigiraf",
+    "types":["Normal","Psychic"],
+    "icon":"images/pokemon/981 HOME.png"
+  },
+  "DUDUNSPARCE": {
+    "name":"Dudunsparce",
+    "types":["Normal"],
+    "icon":"images/pokemon/982 HOME.png"
+  },
+  "KINGAMBIT": {
+    "name":"Kingambit",
+    "types":["Dark","Steel"],
+    "icon":"images/pokemon/983 HOME.png"
+  },
+  "GREAT TUSK": {
+    "name":"Great Tusk",
+    "types":["Ground","Fighting"],
+    "icon":"images/pokemon/984 HOME.png"
+  },
+  "SCREAM TAIL": {
+    "name":"Quaxwell",
+    "types":["Fairy","Psychic"],
+    "icon":"images/pokemon/985 HOME.png"
+  },
+  "BRUTE BONNET": {
+    "name":"Brute Bonnet",
+    "types":["Grass","Dark"],
+    "icon":"images/pokemon/986 HOME.png"
+  },
+  "FLUTTER MANE": {
+    "name":"Flutter Mane",
+    "types":["Ghost","Fairy"],
+    "icon":"images/pokemon/987 HOME.png"
+  },
+  "SLITHER WING": {
+    "name":"Slither Wing",
+    "types":["Bug","Fighting"],
+    "icon":"images/pokemon/988 HOME.png"
+  },
+  "SANDY SHOCKS": {
+    "name":"Sandy Shocks",
+    "types":["Electric","Ground"],
+    "icon":"images/pokemon/989 HOME.png"
+  },
+  "IRON TREADS": {
+    "name":"Iron Treads",
+    "types":["Ground","Steel"],
+    "icon":"images/pokemon/990 HOME.png"
+  },
+  "IRON BUNDLE": {
+    "name":"Iron Bundle",
+    "types":["Ice","Water"],
+    "icon":"images/pokemon/991 HOME.png"
+  },
+  "IRON HANDS": {
+    "name":"Iron Hands",
+    "types":["Fighting","Electric"],
+    "icon":"images/pokemon/992 HOME.png"
+  },
+  "IRON JUGULIS": {
+    "name":"Iron Jugulis",
+    "types":["Dark","Flying"],
+    "icon":"images/pokemon/993 HOME.png"
+  },
+  "IRON MOTH": {
+    "name":"Iron Moth",
+    "types":["Fire","Poison"],
+    "icon":"images/pokemon/994 HOME.png"
+  },
+  "IRON THORNS": {
+    "name":"Iron Thorns",
+    "types":["Rock","Electric"],
+    "icon":"images/pokemon/995 HOME.png"
+  },
+  "FRIGIBAX": {
+    "name":"Frigibax",
+    "types":["Dragon","Ice"],
+    "icon":"images/pokemon/996 HOME.png"
+  },
+  "ARCTIBAX": {
+    "name":"Arctibax",
+    "types":["Dragon","Ice"],
+    "icon":"images/pokemon/997 HOME.png"
+  },
+  "BAXCALIBUR": {
+    "name":"Baxcalibur",
+    "types":["Dragon","Ice"],
+    "icon":"images/pokemon/998 HOME.png"
+  },
+  "GIMMIGHOUL": {
+    "name":"Gimmighoul",
+    "types":["Ghost"],
+    "icon":"images/pokemon/999 HOME.png"
+  },
+  "GIMMIGHOUL-ROAMING": {
+    "name":"Gimmighoul",
+    "types":["Ghost"],
+    "icon":"images/pokemon/999R HOME.png"
+  },
+  "GHOLDENGO": {
+    "name":"Gholdengo",
+    "types":["Steel","Ghost"],
+    "icon":"images/pokemon/1000 HOME.png"
+  },
+  "WO-CHIEN": {
+    "name":"Wo-Chien",
+    "types":["Dark","Grass"],
+    "icon":"images/pokemon/1001 HOME.png"
+  },
+  "CHIEN-PAO": {
+    "name":"Chien-Pao",
+    "types":["Dark","Ice"],
+    "icon":"images/pokemon/1002 HOME.png"
+  },
+  "TING-LU": {
+    "name":"Ting-Lu",
+    "types":["Dark","Ground"],
+    "icon":"images/pokemon/1003 HOME.png"
+  },
+  "CHI-YU": {
+    "name":"Chi-Yu",
+    "types":["Dark","Fire"],
+    "icon":"images/pokemon/1004 HOME.png"
+  },
+  "ROARING MOON": {
+    "name":"Roaring Moon",
+    "types":["Dragon","Dark"],
+    "icon":"images/pokemon/1005 HOME.png"
+  },
+  "IRON VALIANT": {
+    "name":"Iron Valiant",
+    "types":["Fairy","Fighting"],
+    "icon":"images/pokemon/1006 HOME.png"
+  },
+  "KORAIDON": {
+    "name":"Koraidon",
+    "types":["Fighting","Dragon"],
+    "icon":"images/pokemon/1007 HOME.png"
+  },
+  "MIRAIDON": {
+    "name":"Miraidon",
+    "types":["Electric","Dragon"],
+    "icon":"images/pokemon/1008 HOME.png"
+  },
+  "WALKING WAKE": {
+    "name":"Walking Wake",
+    "types":["Water", "Dragon"],
+    "icon":"images/pokemon/1009 HOME.png"
+  },
+  "IRON LEAVES": {
+    "name":"Iron Leaves",
+    "types":["Grass","Psychic"],
+    "icon":"images/pokemon/1010 HOME.png"
+  },
+  "DIPPLIN": {
+    "name":"Dipplin",
+    "types":["Grass","Dragon"],
+    "icon":"images/pokemon/1011 HOME.png"
+  },
+  "POLTCHAGEIST": {
+    "name":"Poltchageist",
+    "types":["Grass","Ghost"],
+    "icon":"images/pokemon/1012 HOME.png"
+  },
+  "POLTCHAGEIST-ARTISAN": {
+    "name":"Poltchageist",
+    "types":["Grass","Ghost"],
+    "icon":"images/pokemon/1012 HOME.png"
+  },
+  "SINISTCHA": {
+    "name":"Sinistcha",
+    "types":["Grass","Ghost"],
+    "icon":"images/pokemon/1013 HOME.png"
+  },
+  "SINISTCHA-MASTERPIECE": {
+    "name":"Sinistcha",
+    "types":["Grass","Ghost"],
+    "icon":"images/pokemon/1013 HOME.png"
+  },
+  "OKIDOGI": {
+    "name":"Okidogi",
+    "types":["Poison","Fighting"],
+    "icon":"images/pokemon/1014 HOME.png"
+  },
+  "MUNKIDORI": {
+    "name":"Munkidori",
+    "types":["Poison","Psychic"],
+    "icon":"images/pokemon/1015 HOME.png"
+  },
+  "FEZANDIPITI": {
+    "name":"Fezandipiti",
+    "types":["Poison","Fairy"],
+    "icon":"images/pokemon/1016 HOME.png"
+  },
+  "OGERPON": {
+    "name":"Ogerpon",
+    "types":["Grass"],
+    "icon":"images/pokemon/1017TM HOME.png"
+  },
+  "OGERPON-CORNERSTONE": {
+    "name":"Ogerpon",
+    "types":["Grass", "Rock"],
+    "icon":"images/pokemon/1017CM HOME.png"
+  },
+  "OGERPON-CORNERSTONE-TERA": {
+    "name":"Ogerpon",
+    "types":["Grass","Rock"],
+    "icon":"images/pokemon/1017CM HOME.png"
+  },
+  "OGERPON-WELLSPRING": {
+    "name":"Ogerpon",
+    "types":["Grass","Water"],
+    "icon":"images/pokemon/1017WM HOME.png"
+  },
+  "OGERPON-WELLSPRING-TERA": {
+    "name":"Ogerpon",
+    "types":["Grass","Water"],
+    "icon":"images/pokemon/1017WM HOME.png"
+  },
+  "OGERPON-HEARTHFLAME": {
+    "name":"Ogerpon",
+    "types":["Grass","Fire"],
+    "icon":"images/pokemon/1017HM HOME.png"
+  },
+  "OGERPON-HEARTHFLAME-TERA": {
+    "name":"Ogerpon",
+    "types":["Grass","Fire"],
+    "icon":"images/pokemon/1017HM HOME.png"
+  },
+  "OGERPON-TEAL-TERA": {
+    "name":"Ogerpon",
+    "types":["Grass"],
+    "icon":"images/pokemon/1017TM HOME.png"
+  },
+  "ARCHALUDON": {
+    "name":"Archaludon",
+    "types":["Steel","Dragon"],
+    "icon":"images/pokemon/1018 HOME.png"
+  },
+  "HYDRAPPLE": {
+    "name":"Hydrapple",
+    "types":["Grass", "Dragon"],
+    "icon":"images/pokemon/1019 HOME.png"
+  },
+  "GOUGING FIRE": {
+    "name":"Gouging Fire",
+    "types":["Fire","Dragon"],
+    "icon":"images/pokemon/1020 HOME.png"
+  },
+  "RAGING BOLT": {
+    "name":"Raging Bolt",
+    "types":["Electric","Dragon"],
+    "icon":"images/pokemon/1021 HOME.png"
+  },
+  "IRON BOULDER": {
+    "name":"Iron Boulder",
+    "types":["Rock","Psychic"],
+    "icon":"images/pokemon/1022 HOME.png"
+  },
+  "IRON CROWN": {
+    "name":"Iron Crown",
+    "types":["Steel", "Psychic"],
+    "icon":"images/pokemon/1023 HOME.png"
   },
   "TERAPAGOS": {
     "name":"Terapagos",
