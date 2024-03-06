@@ -390,6 +390,15 @@ function drawPokemon(pokemon, slot) {
   if (pokemonKeys.includes(pokemon.name.toUpperCase())) {
     let pokemonData = pokemonJSON[pokemon.name.toUpperCase()];
 
+    //Frillish
+    if (pokemonData.name == "Frillish" && pokemon.gender == "F") {
+      pokemonData.icon = "images/pokemon/592F HOME.png";
+    }
+    //Jellicent
+    else if (pokemonData.name == "Jellicent" && pokemon.gender == "F") {
+      pokemonData.icon = "images/pokemon/593F HOME.png";
+    }
+
     loadImage(pokemonData.icon)
         .then(image => ctx.drawImage(image,  boxPosition[0] + 282, boxPosition[1] + 65, 165, 165))
 
