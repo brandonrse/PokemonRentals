@@ -398,6 +398,10 @@ function drawPokemon(pokemon, slot) {
     else if (pokemonData.name == "Jellicent" && pokemon.gender == "F") {
       pokemonData.icon = "images/pokemon/593F HOME.png";
     }
+    //Pyroar
+    else if (pokemonData.name == "Pyroar" && pokemon.gender == "F") {
+      pokemonData.icon = "images/pokemon/668F HOME.png";
+    }
 
     loadImage(pokemonData.icon)
         .then(image => ctx.drawImage(image,  boxPosition[0] + 282, boxPosition[1] + 65, 165, 165))
