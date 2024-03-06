@@ -452,6 +452,7 @@ function drawPokemon(pokemon, slot) {
 function showdownParser(pokemonArr = []) {
   if (pokemonArr.length == 0) return;
   if (pokemonArr.length == 1 && pokemonArr[0] == "") return;
+  let ivsExist = false;
 
   var pokemon = {
     name: "",
@@ -532,7 +533,8 @@ function showdownParser(pokemonArr = []) {
         line = line.replace("IVs", "").trim();
       }
       let ivs = getAllIvs(line);
-      pokemon.ivs = ivs
+      pokemon.ivs = ivs;
+      ivsExist = true;
     }
 
     //Moves
@@ -596,6 +598,10 @@ function showdownParser(pokemonArr = []) {
   //Nickname and item trimmed
   pokemon.nickname = pokemon.nickname.trim();
   pokemon.item = pokemon.item.trim();
+
+  if (!ivsExist) {
+    pokemon.ivs = [31,31,31,31,31,31];
+  }
 
   return pokemon;
 }
