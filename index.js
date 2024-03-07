@@ -26,10 +26,21 @@ var fontMedium = new FontFace("Cabin Condensed-Medium", "url(fonts/CabinCondense
 var fontRegular = new FontFace("Cabin Condensed-Regular", "url(fonts/CabinCondensed-Regular.ttf)");
 var fontSemiBold = new FontFace("Cabin Condensed-SemiBold", "url(fonts/CabinCondensed-SemiBold.ttf)");
 
-document.addEventListener("DOMContentLoaded", function() {
-  pokemonFormDiv.setAttribute("hidden", false);
-  showdownDiv.removeAttribute("hidden");
-  
+document.addEventListener("DOMContentLoaded", function() {  
+  let radio1 = document.getElementById("showdownRadio1");
+  let radio2 = document.getElementById("formRadio1");
+  showdownDiv = document.getElementById("showdown-div");
+  pokemonFormDiv = document.getElementById("pokemon-form-div");
+  if (radio1.checked) {
+    selectedInput = 1;
+    pokemonFormDiv.setAttribute("hidden", false);
+    showdownDiv.removeAttribute("hidden");
+  }
+  else {
+    selectedInput = 2;
+    showdownDiv.setAttribute("hidden", false);
+    pokemonFormDiv.removeAttribute("hidden");
+  }
   loadImage("images/Background.png")
     .then(image => ctx.drawImage(image, 0, 0))
 
