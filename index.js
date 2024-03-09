@@ -688,8 +688,14 @@ function downloadImage() {
   let teamName = document.getElementById("teamName").value;
   let imageToDownload = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
   let link = document.createElement("a");
-
-  if (teamName != "" || teamName != undefined) {
+  console.log("Selected Input", selectedInput);
+  console.log("team name", teamName);
+  console.log(document.querySelectorAll('#teamName'));
+  if (selectedInput == 2) {
+    teamName = document.querySelectorAll('#teamName')[1].value;
+  }
+  
+  if (teamName != "" && teamName != undefined && teamName.length !== 0) {
     link.download = teamName + ".png";
   } else {
     link.download = "team.png";
