@@ -170,6 +170,7 @@ pokemonForm.addEventListener("submit", async (e) => {
   let pokemonObj = [];
 
   let start = 2;
+  let teamShowdownText = "";
   for (let i = 0; i < 6; i++) {
     if (form[start].value != "None") {
       pokemonObj.push(
@@ -189,9 +190,23 @@ pokemonForm.addEventListener("submit", async (e) => {
           ivs: [form[start + 20].value, form[start + 21].value, form[start + 22].value, form[start + 23].value, form[start + 24].value, form[start + 25].value],
         }
       );
+      let line1 = form[start + 1].value == form[start].value || form[start + 1].value == "" ? form[start].value : form[start+1].value + " (" + form[start].value + ") ";
+      line1 += form[start + 3].value !== "None" ? " (" + form[start + 3].value + ")" : "";
+      line1 += form[start + 7].value !== "" ? " @ " + form[start + 7].value : "";
+      let line2 = form[start + 5].value !== "" ? "\nAbility: " + form[start + 5].value : ""
+      let line3 = "\nLevel: " + form[start + 2].value;
+      let line4 = "\nShiny: " + form[start + 4].value;
+      let line5 = "\nHidden Power: " + form[start + 9].value;
+      let line6 = "\nTera Type: " + form[start + 8].value;
+      let line7 = "\nEVs: " + form[start + 14].value + " HP / " + form[start + 15].value + " Atk / " + form[start + 16].value + " Def / " + form[start + 17].value + " SpA / " + form[start+18].value + " SpD / " + form[start+19].value + " Spe ";
+      let line8 = "\n" + form[start + 6].value + " Nature"
+      let line9 = "\nIVs: " + form[start + 14].value + " HP / " + form[start + 15].value + " Atk / " + form[start + 16].value + " Def / " + form[start + 17].value + " SpA / " + form[start+18].value + " SpD / " + form[start+19].value + " Spe ";
+      let lineMoves = "\n- " + form[start + 10].value + "\n- " + form[start + 11].value + "\n- " + form[start + 12].value + "\n- " + form[start + 13].value;
+      teamShowdownText += line1 + line2 + line3 + line4 + line5 + line6 + line7 + line8 + line9 + lineMoves + "\n\n";
     }
     start += 26;
   }
+  document.getElementById("showdownFormatTextArea").value = teamShowdownText;
 
   clearCanvas();
   await loadImage("images/Background.png")
@@ -694,7 +709,7 @@ function downloadImage() {
   if (selectedInput == 2) {
     teamName = document.querySelectorAll('#teamName')[1].value;
   }
-  
+
   if (teamName != "" && teamName != undefined && teamName.length !== 0) {
     link.download = teamName + ".png";
   } else {
