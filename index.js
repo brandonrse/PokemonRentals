@@ -619,9 +619,8 @@ function showdownParser(pokemonArr = []) {
 
   for (let i = 0; i < splitFirstLine.length; i++) {
     let word = splitFirstLine[i];
-
     if (pokemonKeys.includes(word.toUpperCase().trim())) {
-      pokemon.name == word.trim();
+      pokemon.name = word.trim();
     }
     else if (pokemonKeys.includes(word.toUpperCase().trim() + " " + splitFirstLine[i+1 < splitFirstLine.length ? i + 1 : splitFirstLine.length - 1].toUpperCase().trim())) {
       pokemon.name = word.trim() + " " + splitFirstLine[i+1 < splitFirstLine.length ? i + 1 : splitFirstLine.length - 1].trim();
@@ -666,7 +665,6 @@ function showdownParser(pokemonArr = []) {
   if (!ivsExist) {
     pokemon.ivs = [31,31,31,31,31,31];
   }
-
   return pokemon;
 }
 
