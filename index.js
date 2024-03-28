@@ -616,7 +616,6 @@ function showdownParser(pokemonArr = []) {
   let firstLine = pokemonArr[0].trim();
   let splitFirstLine = firstLine.split(" ");
   let itemExists = false;
-
   for (let i = 0; i < splitFirstLine.length; i++) {
     let word = splitFirstLine[i];
     if (pokemonKeys.includes(word.toUpperCase().trim())) {
@@ -637,10 +636,6 @@ function showdownParser(pokemonArr = []) {
       pokemon.name = "Cramorant";
     }
     else if (word.startsWith("(") && (word.endsWith(")") || splitFirstLine[i+1].endsWith(")"))) {
-      if (splitFirstLine[i+1].endsWith(")")) {
-        word += " " + splitFirstLine[i+1];
-        i = i+1;
-      }
       let slicedWord = word.slice(1, -1);
       if (slicedWord == "F" || slicedWord == "M") {
         pokemon.gender = slicedWord;
